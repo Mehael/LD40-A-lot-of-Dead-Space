@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CanvasScript : MonoBehaviour {
+public static class CanvasScript{
     public static float scaleFactor = 37f;
 
-    private void Awake()
+    public static void SetPivot(this RectTransform rectTransform, Vector2 pivot)
     {
-        //SHIT
+        Vector2 size = rectTransform.sizeDelta / scaleFactor;
+        Vector2 deltaPivot = rectTransform.pivot - pivot;
+        Vector3 deltaPosition = new Vector3(deltaPivot.x * size.x, deltaPivot.y * size.y);
+        rectTransform.pivot = pivot;
+        rectTransform.localPosition -= deltaPosition;
     }
 }
