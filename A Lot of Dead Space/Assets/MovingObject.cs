@@ -4,27 +4,31 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class MovingObject : EventTrigger {
-    Vector3 startPosition;
-
-    public override void OnBeginDrag(PointerEventData data)
+public class MovingObject : Marker {
+    public override void OnPointerDown(PointerEventData eventData)
     {
-        startPosition = transform.position;
+        base.OnPointerDown(eventData);
+        SetPivot(new Vector2(0.5f, 0.5f));
     }
 
     public override void OnDrag(PointerEventData data)
     {
-        transform.position = GetMouseCoords();
-    }
-
-    private static Vector3 GetMouseCoords()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        return new Vector3(ray.origin.x, ray.origin.y, 0);
+        transform.parent.position = GetMouseCoords();
     }
 
     public override void OnEndDrag(PointerEventData data)
     {
-        transform.position = Board.instance.GetClosestSnap(GetMouseCoords());
+        RecalculateGridRect();
+        SetPivot(new Vector2(0, 0));
+
+        if (leftbottom.x < 0) leftbottom.x = 0;
+        if (leftbottom.y < 0) leftbottom.y = 0;
+
+        if (leftbottom.x > Board.instance.Width - size.x)
+            leftbottom.x = Board.instance.Width - size.x;
+        if (leftbottom.y > Board.instance.Height - size.y)
+            leftbottom.y = Board.instance.Height - size.y;
+
+        transform.parent.position = leftbottom;
     }
 }
