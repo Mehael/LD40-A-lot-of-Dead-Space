@@ -50,18 +50,20 @@ public class Board : MonoBehaviour {
         _height = Height;
     }
 
-    internal Vector3 GetClosestSnap(Vector3 vector3)
+    internal Vector2 GetClosestSnap(Vector3 vector3)
     {
         var localCoords = vector3 - transform.localPosition;
-        var localShift = transform.position - 
-            new Vector3(Mathf.RoundToInt(transform.position.x) + 0.5f,
-            Mathf.RoundToInt(transform.position.y) + 0.5f);
 
         var snappedCoords = new Vector3(
-            Mathf.RoundToInt(localCoords.x) + transform.localPosition.x + localShift.x,
-            Mathf.RoundToInt(localCoords.y) + transform.localPosition.y + localShift.y,
+            Mathf.RoundToInt(localCoords.x) + transform.localPosition.x,
+            Mathf.RoundToInt(localCoords.y) + transform.localPosition.y,
             0);
 
         return snappedCoords;
+    }
+
+    internal Vector2 GetCoords(Vector3 position)
+    {
+        return new Vector2(Mathf.RoundToInt(position.x), Mathf.RoundToInt(position.y));
     }
 }
