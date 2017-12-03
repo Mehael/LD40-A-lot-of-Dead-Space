@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class HasPerfectCover : Task
 {
-    public string PerfectTag1 = "";
-    public string PerfectTag2 = "";
+    public string Tag1 = "";
+    public string Tag2 = "";
 
     public override bool IsCompleted()
     {
