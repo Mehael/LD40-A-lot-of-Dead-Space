@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class Marker : EventTrigger {
-    Vector3 startPosition;
+    protected Vector3 startPosition;
     Image image;
     public Vector2 size;
     public Vector2 leftbottom;

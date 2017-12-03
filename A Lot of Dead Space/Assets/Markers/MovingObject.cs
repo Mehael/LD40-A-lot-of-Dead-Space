@@ -18,17 +18,24 @@ public class MovingObject : Marker {
 
     public override void OnEndDrag(PointerEventData data)
     {
-        RecalculateGridRect();
-        SetPivot(new Vector2(0, 0));
+        var finalMousePosition = GetMouseCoords();
+        if (finalMousePosition.x < 0 || finalMousePosition.x > Board.instance.Width
+            || finalMousePosition.y < 0 || finalMousePosition.y > Board.instance.Height)
+            Destroy(rect.gameObject);
+        else
+        {
+            RecalculateGridRect();
+            SetPivot(new Vector2(0, 0));
 
-        if (leftbottom.x < 0) leftbottom.x = 0;
-        if (leftbottom.y < 0) leftbottom.y = 0;
+            if (leftbottom.x < 0) leftbottom.x = 0;
+            if (leftbottom.y < 0) leftbottom.y = 0;
 
-        if (leftbottom.x > Board.instance.Width - size.x)
-            leftbottom.x = Board.instance.Width - size.x;
-        if (leftbottom.y > Board.instance.Height - size.y)
-            leftbottom.y = Board.instance.Height - size.y;
+            if (leftbottom.x > Board.instance.Width - size.x)
+                leftbottom.x = Board.instance.Width - size.x;
+            if (leftbottom.y > Board.instance.Height - size.y)
+                leftbottom.y = Board.instance.Height - size.y;
 
-        transform.parent.position = leftbottom;
+            transform.parent.position = leftbottom;
+        }
     }
 }

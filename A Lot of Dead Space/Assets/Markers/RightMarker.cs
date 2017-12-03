@@ -27,7 +27,6 @@ public class RightMarker : Marker {
             maxScale = leftbottom + size;
 
         //pivots
-        var parentRect = transform.parent.GetComponent<RectTransform>();
         var pivot = Vector2.zero;
         if (name == "right")
             pivot = new Vector2(0, 0.5f);
