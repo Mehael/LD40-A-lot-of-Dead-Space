@@ -17,7 +17,7 @@ public class Marker : EventTrigger {
     public RectTransform rect;
     bool isDragged = false;
 
-    private void Start()
+    private void Awake()
     {
         image = GetComponent<Image>();
         image.color = defaultState;
@@ -78,6 +78,12 @@ public class Marker : EventTrigger {
 
     public override void OnEndDrag(PointerEventData data)
     {
+        image.color = defaultState;
         RecalculateGridRect();
+    }
+
+    public void SetSize(Vector2 size)
+    {
+        rect.sizeDelta = size * CanvasScript.scaleFactor;
     }
 }

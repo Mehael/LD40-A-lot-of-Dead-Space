@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -24,7 +25,8 @@ public class MovingObject : Marker {
             Destroy(rect.gameObject);
         else
         {
-            RecalculateGridRect();
+            base.OnEndDrag(data);
+
             SetPivot(new Vector2(0, 0));
 
             if (leftbottom.x < 0) leftbottom.x = 0;
