@@ -22,7 +22,9 @@ public class MovingObject : Marker {
         var finalMousePosition = GetMouseCoords();
         if (finalMousePosition.x < 0 || finalMousePosition.x > Board.instance.Width
             || finalMousePosition.y < 0 || finalMousePosition.y > Board.instance.Height)
+        {
             Destroy(rect.gameObject);
+        }
         else
         {
             base.OnEndDrag(data);

@@ -16,10 +16,12 @@ public class Marker : EventTrigger {
 
     public RectTransform rect;
     bool isDragged = false;
+    public CustomisableSprite spriteScript;
 
     private void Awake()
     {
         image = GetComponent<Image>();
+        spriteScript = transform.parent.GetComponent<CustomisableSprite>();
         image.color = defaultState;
         rect = transform.parent.GetComponent<RectTransform>();
     }
@@ -74,6 +76,8 @@ public class Marker : EventTrigger {
         SetPivot(new Vector2(0.5f, 0.5f));
         leftbottom = new Vector2(Mathf.Round(transform.parent.position.x - (size.x) / 2),
             Mathf.Round(transform.parent.position.y - (size.y) / 2));
+
+        spriteScript.UpdateRectCoords(leftbottom, size);
     }
 
     public override void OnEndDrag(PointerEventData data)
