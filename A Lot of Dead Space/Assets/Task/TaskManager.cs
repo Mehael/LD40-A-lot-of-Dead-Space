@@ -54,6 +54,8 @@ public class TaskManager : MonoBehaviour {
     {
         if (task == null) return;
 
+        task.OnEnabled();
+
         if (task.Title != "")
         {
             currentMainTask = task;
