@@ -11,10 +11,12 @@ public class Task : MonoBehaviour {
 
     public List<GameObject> createdItems;
 
+
+
     public virtual bool IsCompleted()
     {
         return false;
     }
-
+    public virtual void OnEnabled() { }
     public virtual void ShowErrorCoursor() { }
 }

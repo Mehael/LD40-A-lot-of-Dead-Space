@@ -6,11 +6,31 @@ using UnityEngine;
 public class CustomisableSprite : MonoBehaviour {
     public MovingObject movingAnchor;
     public string Tag { get; private set; }
+    public bool isHeavy { get; private set; }
+    public bool isAppealing { get; private set; }
 
     private void Awake()
     {
         Tag = tag;
         Board.sprites.Add(this);
+
+        if (Tag == "PlayButton1"
+            || Tag == "PlayButton2" 
+            || Tag == "Close"
+            || Tag == "Offer1"
+            || Tag == "Offer2"
+            || Tag == "Offer3")
+            isHeavy = true;
+        else
+            isHeavy = false;
+
+        if (Tag == "Appealing"
+            || Tag == "Block"
+            || Tag == "Premium"
+            || Tag == "Timer")
+            isAppealing = true;
+        else
+            isAppealing = false;
     }
 
     public void OnDestroy()

@@ -5,9 +5,15 @@ using System.Linq;
 
 public class HasTaggedItem : Task {
     public string Tag = "PlayButton";
+    public bool DontHasMode = false;
 
     public override bool IsCompleted()
     {
-        return Board.sprites.Count(s => s.Tag == Tag) > 0;
+        var amount = Board.sprites.Count(s => s.Tag == Tag);
+
+        if (DontHasMode)
+            return amount == 0;
+        else
+            return amount > 0;
     }
 }

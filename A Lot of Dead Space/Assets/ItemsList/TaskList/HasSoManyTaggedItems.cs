@@ -7,9 +7,13 @@ public class HasSoManyTaggedItems : Task
 {
     public string Tag = "PlayButton";
     public int MaxAmount = 1;
+    public bool LessMode = false;
 
     public override bool IsCompleted()
     {
-        return Board.sprites.Count(s => s.Tag == Tag) <= MaxAmount;
+        if (LessMode)
+            return Board.sprites.Count(s => s.Tag == Tag) > MaxAmount;
+        else
+            return Board.sprites.Count(s => s.Tag == Tag) <= MaxAmount;
     }
 }
