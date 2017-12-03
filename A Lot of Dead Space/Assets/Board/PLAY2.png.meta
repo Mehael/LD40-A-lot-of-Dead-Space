@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: d7234a891761f994f9c15c2e8910aba2
 timeCreated: 1512317068
+=======
+guid: bd0605183dd81ab4ba6814d4b1205c47
+timeCreated: 1512315117
+>>>>>>> Stashed changes
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -45,7 +50,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< Updated upstream
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+=======
+  spriteBorder: {x: 45, y: 40, z: 44, w: 30}
+>>>>>>> Stashed changes
   spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1

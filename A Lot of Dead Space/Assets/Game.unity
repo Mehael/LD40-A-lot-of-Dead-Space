@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 10955258}
   - component: {fileID: 10955259}
   m_Layer: 0
-  m_Name: AddPlay2
+  m_Name: 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -213,7 +213,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 799754455}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &10955259
 MonoBehaviour:
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fd8596d2dc068b47acac14e9f74c8ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 'Task 11: Add second PLAY button!'
+  Title: 'Task 11: Add second Play button!'
   Description: Players love choice
   unlockedPrefabs:
   - {fileID: 114245401923476932, guid: 6720bba1063a5bf47bc932a7701791dd, type: 2}
@@ -235,6 +235,7 @@ MonoBehaviour:
   - {fileID: 2023262710}
   createdItems: []
   Tag: PlayButton2
+  DontHasMode: 0
 --- !u!1 &74218854
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +322,54 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224679228443297040, guid: af002244c30a9614cbae7879eee50aa8,
     type: 2}
   m_PrefabInternal: {fileID: 2007269188}
+--- !u!1 &168499695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 168499696}
+  - component: {fileID: 168499697}
+  m_Layer: 0
+  m_Name: 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &168499696
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 168499695}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &168499697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 168499695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd8596d2dc068b47acac14e9f74c8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 5: Add Level Goals'
+  Description: Player needs to know what he is supposed to achieve
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: Goals
+  DontHasMode: 0
 --- !u!1 &221358514
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,6 +451,156 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 221358514}
+--- !u!1 &238423383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 238423384}
+  - component: {fileID: 238423385}
+  m_Layer: 0
+  m_Name: 17
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &238423384
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 238423383}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &238423385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 238423383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d6cf43c2576a24b8005da0180efad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 17: Make Giftbox more appealing'
+  Description: Players should not miss their daily reward
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: Gift
+  RequiredAppealingPoints: 1
+  FlexibleRequirement: 1
+  LessMode: 0
+--- !u!1 &340969728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 340969729}
+  - component: {fileID: 340969730}
+  m_Layer: 0
+  m_Name: 20
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &340969729
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 340969728}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &340969730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 340969728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d6cf43c2576a24b8005da0180efad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 20: Make Giftbox MORE appealing'
+  Description: Our CEO is not able to register if current Giftbox is on its place
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: Gift
+  RequiredAppealingPoints: 1
+  FlexibleRequirement: 1
+  LessMode: 0
+--- !u!1 &402133096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 402133097}
+  - component: {fileID: 402133098}
+  m_Layer: 0
+  m_Name: 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &402133097
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 402133096}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &402133098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 402133096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d652afd4f69124daa002db91b06f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 3: Make Play bigger'
+  Description: It's too easy to miss
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: PlayButton1
+  RequiredSize: 5
+  FlexibleRequirement: 1
+  LessMode: 0
 --- !u!1 &411376393
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,6 +933,102 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 539707956}
+--- !u!1 &597117809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 597117810}
+  - component: {fileID: 597117811}
+  m_Layer: 0
+  m_Name: 34
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &597117810
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 597117809}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &597117811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 597117809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd8596d2dc068b47acac14e9f74c8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 34: Remove Level Goals'
+  Description: We need more shop offers
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: Goals
+  DontHasMode: 1
+--- !u!1 &622447964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 622447965}
+  - component: {fileID: 622447966}
+  m_Layer: 0
+  m_Name: 16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &622447965
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 622447964}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &622447966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 622447964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd8596d2dc068b47acac14e9f74c8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 16: Add daily reward'
+  Description: Let's encourage player retention
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: Gift
+  DontHasMode: 0
 --- !u!1 &625182754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,9 +1380,27 @@ Transform:
   m_Children:
   - {fileID: 2062794184}
   - {fileID: 1315214678}
+  - {fileID: 402133097}
   - {fileID: 10955258}
   - {fileID: 2023262709}
   - {fileID: 1377713720}
+  - {fileID: 2095075718}
+  - {fileID: 1115856952}
+  - {fileID: 1075477502}
+  - {fileID: 622447965}
+  - {fileID: 238423384}
+  - {fileID: 340969729}
+  - {fileID: 1178891335}
+  - {fileID: 1269568793}
+  - {fileID: 1383665894}
+  - {fileID: 168499696}
+  - {fileID: 1821130023}
+  - {fileID: 597117810}
+  - {fileID: 863861498}
+  - {fileID: 1814247784}
+  - {fileID: 808371655}
+  - {fileID: 1445642650}
+  - {fileID: 1772512225}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1188,6 +1501,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
+--- !u!1 &808371654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 808371655}
+  - component: {fileID: 808371656}
+  m_Layer: 0
+  m_Name: 25
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &808371655
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 808371654}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &808371656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 808371654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d652afd4f69124daa002db91b06f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 25: Make Character bigger'
+  Description: Should look lovely on promos
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: none
+  RequiredSize: 1
+  FlexibleRequirement: 1
+  LessMode: 0
 --- !u!1 &815541499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,6 +1713,54 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 820019052}
+--- !u!1 &863861497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 863861498}
+  - component: {fileID: 863861499}
+  m_Layer: 0
+  m_Name: 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &863861498
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 863861497}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &863861499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 863861497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd8596d2dc068b47acac14e9f74c8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 6: Add cute Character'
+  Description: According to QA female audience wants to see cute male character
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: Char1
+  DontHasMode: 0
 --- !u!1 &881472921
 GameObject:
   m_ObjectHideFlags: 0
@@ -1856,6 +2267,102 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1042140709}
+--- !u!1 &1075477501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1075477502}
+  - component: {fileID: 1075477503}
+  m_Layer: 0
+  m_Name: 28
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1075477502
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1075477501}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1075477503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1075477501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e6136911fbf9345a2aee057ccc6f42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 28: Make second Play button Premium only'
+  Description: Competitive players like to feel elite
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag1: PlayButton2
+  Tag2: Premium
+--- !u!1 &1115856951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1115856952}
+  - component: {fileID: 1115856953}
+  m_Layer: 0
+  m_Name: 37
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1115856952
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1115856951}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1115856953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1115856951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd8596d2dc068b47acac14e9f74c8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 37: Delete Play button'
+  Description: Monthly income is not expected to drop
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: PlayButton1
+  DontHasMode: 1
 --- !u!1 &1126710196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1934,6 +2441,56 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1126710196}
+--- !u!1 &1178891334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1178891335}
+  - component: {fileID: 1178891336}
+  m_Layer: 0
+  m_Name: 24
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1178891335
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1178891334}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1178891336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1178891334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d6cf43c2576a24b8005da0180efad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 24: Make Giftbox more APPEALING'
+  Description: Our CEO's mom told she wants more beautiful Giftbox
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: Gift
+  RequiredAppealingPoints: 1
+  FlexibleRequirement: 1
+  LessMode: 0
 --- !u!1 &1227508548
 GameObject:
   m_ObjectHideFlags: 0
@@ -2184,6 +2741,54 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260231944}
+--- !u!1 &1269568792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1269568793}
+  - component: {fileID: 1269568794}
+  m_Layer: 0
+  m_Name: 29
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1269568793
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1269568792}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1269568794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1269568792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd8596d2dc068b47acac14e9f74c8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 29: Add VIP Giftbox for top payers'
+  Description: Spending money in the shop should feel rewarding
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: VipGift
+  DontHasMode: 0
 --- !u!1 &1294295564
 GameObject:
   m_ObjectHideFlags: 0
@@ -2228,7 +2833,7 @@ GameObject:
   - component: {fileID: 1315214678}
   - component: {fileID: 1315214679}
   m_Layer: 0
-  m_Name: AddGiftbox
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2266,7 +2871,8 @@ MonoBehaviour:
   enabledTasks:
   - {fileID: 2062794185}
   createdItems: []
-  Tag: PlayButton
+  Tag: Gift
+  DontHasMode: 0
 --- !u!1 &1356872116
 GameObject:
   m_ObjectHideFlags: 0
@@ -2356,10 +2962,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1377713720}
-  - component: {fileID: 1377713722}
   - component: {fileID: 1377713721}
   m_Layer: 0
-  m_Name: Play2Block
+  m_Name: 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2376,7 +2981,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 799754455}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1377713721
 MonoBehaviour:
@@ -2386,28 +2991,67 @@ MonoBehaviour:
   m_GameObject: {fileID: 1377713719}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb7e4090e158e4847bbe050190f95787, type: 3}
+  m_Script: {fileID: 11500000, guid: 85e6136911fbf9345a2aee057ccc6f42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1377713722
+  Title: 'Task 13: Block second Play button until level 50'
+  Description: We need to attract competitive players
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag1: PlayButton2
+  Tag2: Block
+--- !u!1 &1383665893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1383665894}
+  - component: {fileID: 1383665895}
+  m_Layer: 0
+  m_Name: 39
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1383665894
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1383665893}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1383665895
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1377713719}
+  m_GameObject: {fileID: 1383665893}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06d652afd4f69124daa002db91b06f53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 'Task 13: Block second Play button until level 50'
-  Description: People hardly see Play button
+  Title: 'Task 39: Make VIP Giftbox bigger'
+  Description: It contains more loot, right?
   unlockedPrefabs: []
   disabledTasks: []
   enabledTasks: []
   createdItems: []
-  Tag: PlayButton
-  RequiredSize: 15
+  Tag: VipGift
+  RequiredSize: 1
+  FlexibleRequirement: 1
+  LessMode: 0
 --- !u!1 &1427868131
 GameObject:
   m_ObjectHideFlags: 0
@@ -2570,6 +3214,75 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1436794556}
+--- !u!1 &1445642649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1445642650}
+  - component: {fileID: 1445642652}
+  - component: {fileID: 1445642651}
+  m_Layer: 0
+  m_Name: 27
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1445642650
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445642649}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1445642651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445642649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd8596d2dc068b47acac14e9f74c8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 27: Make Character female'
+  Description: Dont't forget to remove old Character asset
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: Char2
+  DontHasMode: 0
+--- !u!114 &1445642652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445642649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd8596d2dc068b47acac14e9f74c8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 27: Make Character female'
+  Description: Just minor tweak for upcoming asian release candidate, Shouldn't take
+    long.
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: Char3
+  DontHasMode: 0
 --- !u!1 &1522355246
 GameObject:
   m_ObjectHideFlags: 0
@@ -3018,6 +3731,54 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1702272282}
+--- !u!1 &1772512224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1772512225}
+  - component: {fileID: 1772512226}
+  m_Layer: 0
+  m_Name: 32BoobsIncrease
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1772512225
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1772512224}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1772512226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1772512224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd8596d2dc068b47acac14e9f74c8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 32: Make Character chest more appealing'
+  Description: New players seem to like visual feedback
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: Char3Boobs
+  DontHasMode: 0
 --- !u!1 &1813659279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3052,6 +3813,124 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1814247783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1814247784}
+  - component: {fileID: 1814247786}
+  - component: {fileID: 1814247785}
+  m_Layer: 0
+  m_Name: 15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1814247784
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1814247783}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1814247785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1814247783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd8596d2dc068b47acac14e9f74c8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 15: Change Character to boy of color'
+  Description: Dont't forget to remove old Character asset
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: Char1
+  DontHasMode: 1
+--- !u!114 &1814247786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1814247783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd8596d2dc068b47acac14e9f74c8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 15: Change Character to boy of color'
+  Description: We need more divercity
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: Char2
+  DontHasMode: 0
+--- !u!1 &1821130022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1821130023}
+  - component: {fileID: 1821130024}
+  m_Layer: 0
+  m_Name: 9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1821130023
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1821130022}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1821130024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1821130022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d6cf43c2576a24b8005da0180efad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 9: Make Goals nicer'
+  Description: Goals section should invite to play
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: Goals
+  RequiredAppealingPoints: 1
+  FlexibleRequirement: 1
+  LessMode: 0
 --- !u!1 &1908751831
 GameObject:
   m_ObjectHideFlags: 0
@@ -3244,7 +4123,7 @@ GameObject:
   - component: {fileID: 2023262709}
   - component: {fileID: 2023262710}
   m_Layer: 0
-  m_Name: Play1Big
+  m_Name: 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3261,7 +4140,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 799754455}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2023262710
 MonoBehaviour:
@@ -3274,14 +4153,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06d652afd4f69124daa002db91b06f53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 'Task 12: Make PLAY bigger'
+  Title: 'Task 12: Make Play bigger'
   Description: People hardly see Play button
   unlockedPrefabs: []
   disabledTasks: []
-  enabledTasks: []
+  enabledTasks:
+  - {fileID: 0}
   createdItems: []
   Tag: PlayButton
-  RequiredSize: 15
+  RequiredSize: 3
+  FlexibleRequirement: 1
+  LessMode: 0
 --- !u!1 &2062794183
 GameObject:
   m_ObjectHideFlags: 0
@@ -3292,7 +4174,7 @@ GameObject:
   - component: {fileID: 2062794184}
   - component: {fileID: 2062794185}
   m_Layer: 0
-  m_Name: AddPlay
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3331,6 +4213,7 @@ MonoBehaviour:
   - {fileID: 1315214679}
   createdItems: []
   Tag: PlayButton
+  DontHasMode: 0
 --- !u!1 &2091913588
 GameObject:
   m_ObjectHideFlags: 0
@@ -3412,6 +4295,56 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2091913588}
+--- !u!1 &2095075717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2095075718}
+  - component: {fileID: 2095075719}
+  m_Layer: 0
+  m_Name: 31
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2095075718
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2095075717}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799754455}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2095075719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2095075717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d6cf43c2576a24b8005da0180efad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 'Task 31: Make Play 1 less appealing'
+  Description: We should attract audience toward VIP Play button
+  unlockedPrefabs: []
+  disabledTasks: []
+  enabledTasks: []
+  createdItems: []
+  Tag: PlayButton
+  RequiredAppealingPoints: 0
+  FlexibleRequirement: 0
+  LessMode: 1
 --- !u!1 &2108021730
 GameObject:
   m_ObjectHideFlags: 0
