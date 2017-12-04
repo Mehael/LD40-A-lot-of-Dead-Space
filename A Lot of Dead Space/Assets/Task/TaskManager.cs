@@ -41,7 +41,7 @@ public class TaskManager : MonoBehaviour {
         else
             View.Description.text = currentMainTask.Description;
 
-        View.Done.enabled = currentMainTask.IsCompleted() 
+        View.Done.interactable = currentMainTask.IsCompleted() 
             && sideTasks == "";
     }
 
@@ -72,7 +72,7 @@ public class TaskManager : MonoBehaviour {
 
             View.Label.text = task.Title;
             View.Description.text = task.Description;
-            View.Done.enabled = false;
+            View.Done.interactable = false;
         }
 
         foreach (var item in task.unlockedTools)
