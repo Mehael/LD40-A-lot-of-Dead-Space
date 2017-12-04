@@ -20,7 +20,12 @@ public class CheckSize : Task {
 
         float nowSize = GetCurrentSize();
 
+        if (LessMode)
+            RequiredSize = -RequiredSize;
+
         reallyRequestedSize = nowSize + RequiredSize;
+        if (reallyRequestedSize < 1)
+            reallyRequestedSize = 1;
     }
 
     private float GetCurrentSize()
@@ -45,7 +50,7 @@ public class CheckSize : Task {
         var size = GetCurrentSize();
 
         if (LessMode)
-            return size < reallyRequestedSize;
+            return size <= reallyRequestedSize;
         else
             return size >= reallyRequestedSize;
     }
