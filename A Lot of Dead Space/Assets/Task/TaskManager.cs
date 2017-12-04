@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class TaskManager : MonoBehaviour {
     public static TaskManager instance;
 
     public Transform TasksNode;
-    public Transform Toolbar;
     public TaskViewer View;
     public Task FirstTask;
 
@@ -31,7 +31,7 @@ public class TaskManager : MonoBehaviour {
                 if (sideTasks == "")
                     sideTasks = task.Description;
                 else
-                    sideTasks += task.Description + "\n";
+                    sideTasks += "\n\n" + task.Description;
 
         if (sideTasks != "")
             View.Description.text = sideTasks;
@@ -72,20 +72,29 @@ public class TaskManager : MonoBehaviour {
             View.Done.enabled = false;
         }
 
-        foreach (var item in task.unlockedPrefabs) {
-            var ToolbarItem = Instantiate(item, Toolbar);
-            task.createdItems.Add(ToolbarItem.gameObject);
-        }
+        foreach (var item in task.unlockedTools)
+            Toolbar.instance.AddTool(item);
 
         activeTasks.Add(task);
     }
 
     void DisableTask(Task task)
     {
-        foreach (var item in task.createdItems)
-            if (item != null)
-                Destroy(item);
-
         activeTasks.Remove(task);
+
+        foreach (var item in task.unlockedTools)
+            SafeDestroy(item); 
+    }
+
+    void SafeDestroy(ToolbarItem item)
+    {
+        bool isUsed = false;
+        foreach (var t in activeTasks)
+            foreach (var i in t.unlockedTools)
+                if (i.tag == item.tag)
+                    isUsed = true;
+
+        if (!isUsed)
+            Toolbar.instance.RemoveTool(item.tag);
     }
 }

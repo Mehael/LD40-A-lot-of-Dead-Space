@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114209539616291676}
   m_Layer: 5
   m_Name: VipGiftBoxTool
-  m_TagString: PlayButton
+  m_TagString: VipGift
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,6 +122,8 @@ MonoBehaviour:
   spawnedItem: {fileID: 114689191184028904, guid: 8475157c2faddc842b857191c18ec7c9,
     type: 2}
   spawnedSize: {x: 2, y: 2}
+  item: {fileID: 0}
+  isDragged: 0
 --- !u!114 &114516639918389422
 MonoBehaviour:
   m_ObjectHideFlags: 1

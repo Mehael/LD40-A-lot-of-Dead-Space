@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114209539616291676}
   m_Layer: 5
   m_Name: Offer2Tool
-  m_TagString: PlayButton
+  m_TagString: Offer2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,6 +122,8 @@ MonoBehaviour:
   spawnedItem: {fileID: 114689191184028904, guid: 3e454d83f7a388c4191b98b4459829c5,
     type: 2}
   spawnedSize: {x: 4, y: 1}
+  item: {fileID: 0}
+  isDragged: 0
 --- !u!114 &114516639918389422
 MonoBehaviour:
   m_ObjectHideFlags: 1

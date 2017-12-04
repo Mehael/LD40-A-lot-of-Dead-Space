@@ -228,12 +228,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 11: Add second Play button!'
   Description: Players love choice
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 6f24c6e76c49bfa4b95b1a40bb90febf, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 2023262710}
-  createdItems: []
   Tag: PlayButton2
   DontHasMode: 0
 --- !u!1 &80549373
@@ -265,12 +264,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 36: Bring Close back but make it Premium only'
   Description: Nailed it
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 43832f5d54dde604987d37a3a87ec8aa, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 1115856953}
-  createdItems: []
   Tag: Close
   DontHasMode: 0
 --- !u!4 &80549376
@@ -287,6 +285,168 @@ Transform:
   m_Father: {fileID: 799754455}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &90168728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 90168729}
+  - component: {fileID: 90168732}
+  - component: {fileID: 90168731}
+  - component: {fileID: 90168730}
+  m_Layer: 5
+  m_Name: BoardLine(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &90168729
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 90168728}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 83.99078, y: 9.998901, z: 0}
+  m_LocalScale: {x: 15, y: 0.02, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1978473215}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -18.509216, y: -166.5011}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &90168730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 90168728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 1.3
+--- !u!114 &90168731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 90168728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &90168732
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 90168728}
+--- !u!1 &105854477
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 105854478}
+  - component: {fileID: 105854481}
+  - component: {fileID: 105854480}
+  - component: {fileID: 105854479}
+  m_Layer: 5
+  m_Name: BoardLine(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &105854478
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 105854477}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.998901, y: 120.986725, z: 0}
+  m_LocalScale: {x: 15, y: 0.02, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1978473215}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -92.5011, y: -55.513275}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &105854479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 105854477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 1.3
+--- !u!114 &105854480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 105854477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &105854481
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 105854477}
 --- !u!1 &131945435
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,7 +552,7 @@ GameObject:
   - component: {fileID: 168499697}
   m_Layer: 0
   m_Name: 5
-  m_TagString: Untagged
+  m_TagString: Goals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -423,176 +583,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 5: Add Level Goals'
   Description: Player needs to know what he is supposed to achieve
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 092fe9dab6a30ab449ab05d8efcf4a41, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 863861499}
-  createdItems: []
   Tag: Goals
   DontHasMode: 0
---- !u!1 &213513893
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 213513894}
-  - component: {fileID: 213513897}
-  - component: {fileID: 213513896}
-  - component: {fileID: 213513895}
-  m_Layer: 5
-  m_Name: BoardLine(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &213513894
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 213513893}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.998901, y: 46.994843, z: 0}
-  m_LocalScale: {x: 15, y: 0.02, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1978473215}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -92.5011, y: -129.50516}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &213513895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 213513893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedScale: 1.3
---- !u!114 &213513896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 213513893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &213513897
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 213513893}
---- !u!1 &225581400
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 225581401}
-  - component: {fileID: 225581404}
-  - component: {fileID: 225581403}
-  - component: {fileID: 225581402}
-  m_Layer: 5
-  m_Name: BoardLine(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &225581401
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 225581400}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 9.998901, y: 9.998901, z: 0}
-  m_LocalScale: {x: 15, y: 0.02, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1978473215}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -92.5011, y: -166.5011}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &225581402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 225581400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedScale: 1.3
---- !u!114 &225581403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 225581400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &225581404
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 225581400}
 --- !u!1 &238423383
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,18 +632,98 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 17: Make Giftbox more appealing'
   Description: Players should not miss their daily reward
-  unlockedPrefabs:
-  - {fileID: 114133477520621304, guid: 7937ad551e6da7b49955199e961f47ad, type: 2}
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 7f56e0d7f4bf7b243bd2a079d18e5eb7, type: 2}
   - {fileID: 114133477520621304, guid: cc2f22076c230d54c8a940ac9f6514ab, type: 2}
+  - {fileID: 114133477520621304, guid: 7937ad551e6da7b49955199e961f47ad, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 1041236893}
-  createdItems: []
   Tag: Gift
   RequiredAppealingPoints: 1
   FlexibleRequirement: 1
   LessMode: 0
+--- !u!1 &244197697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 244197698}
+  - component: {fileID: 244197701}
+  - component: {fileID: 244197700}
+  - component: {fileID: 244197699}
+  m_Layer: 5
+  m_Name: BoardLine(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &244197698
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 244197697}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 120.986725, y: 9.998901, z: 0}
+  m_LocalScale: {x: 15, y: 0.02, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1978473215}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 18.486725, y: -166.5011}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &244197699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 244197697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 1.3
+--- !u!114 &244197700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 244197697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &244197701
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 244197697}
 --- !u!1 &285042927
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,12 +849,12 @@ MonoBehaviour:
   Title: 'Task 14: Add Facebook integration'
   Description: People are just screaming about showing our game to every person they
     know
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 1c0fca1baa0983e489864b374df2435a, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 1814247786}
-  createdItems: []
+  - {fileID: 745620779}
   Tag: FBLogin
   DontHasMode: 0
 --- !u!4 &319966021
@@ -835,14 +912,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 20: Make Giftbox MORE appealing'
   Description: Our CEO is not able to register if current Giftbox is on its place
-  unlockedPrefabs:
-  - {fileID: 114245401923476932, guid: 7f56e0d7f4bf7b243bd2a079d18e5eb7, type: 2}
-  - {fileID: 114133477520621304, guid: 7937ad551e6da7b49955199e961f47ad, type: 2}
+  unlockedTools:
   - {fileID: 114133477520621304, guid: cc2f22076c230d54c8a940ac9f6514ab, type: 2}
+  - {fileID: 114133477520621304, guid: 7937ad551e6da7b49955199e961f47ad, type: 2}
+  - {fileID: 114245401923476932, guid: 7f56e0d7f4bf7b243bd2a079d18e5eb7, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 1749111989}
-  createdItems: []
   Tag: Gift
   RequiredAppealingPoints: 1
   FlexibleRequirement: 1
@@ -876,11 +952,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 
   Description: Dont't forget to remove old Character asset
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: a737c7ed7e4e91446b00bd32bcfc1c13, type: 2}
   disabledTasks: []
   enabledTasks: []
-  createdItems: []
   Tag: Char2
   DontHasMode: 1
 --- !u!4 &362752679
@@ -907,7 +982,7 @@ GameObject:
   - component: {fileID: 402133098}
   m_Layer: 0
   m_Name: 3
-  m_TagString: Untagged
+  m_TagString: PlayButton1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -938,12 +1013,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 3: Make Play bigger'
   Description: It's too easy to miss
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 6720bba1063a5bf47bc932a7701791dd, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 547380582}
-  createdItems: []
   Tag: PlayButton1
   RequiredSize: 5
   FlexibleRequirement: 1
@@ -990,25 +1064,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 
   Description: Now the golden frame
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 43832f5d54dde604987d37a3a87ec8aa, type: 2}
   - {fileID: 114245401923476932, guid: f547579ff212c5148978937a99dac1de, type: 2}
   disabledTasks: []
   enabledTasks: []
-  createdItems: []
   Tag1: Close
   Tag2: Premium
---- !u!1 &437855923
+--- !u!1 &465330431
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 437855924}
-  - component: {fileID: 437855927}
-  - component: {fileID: 437855926}
-  - component: {fileID: 437855925}
+  - component: {fileID: 465330432}
+  - component: {fileID: 465330435}
+  - component: {fileID: 465330434}
+  - component: {fileID: 465330433}
   m_Layer: 5
   m_Name: BoardLine(Clone)
   m_TagString: Untagged
@@ -1016,42 +1089,42 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &437855924
+--- !u!224 &465330432
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 437855923}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 120.986725, y: 9.998901, z: 0}
+  m_GameObject: {fileID: 465330431}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.998901, y: 46.994843, z: 0}
   m_LocalScale: {x: 15, y: 0.02, z: 1}
   m_Children: []
   m_Father: {fileID: 1978473215}
-  m_RootOrder: 3
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18.486725, y: -166.5011}
+  m_AnchoredPosition: {x: -92.5011, y: -129.50516}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &437855925
+--- !u!114 &465330433
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 437855923}
+  m_GameObject: {fileID: 465330431}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speedScale: 1.3
---- !u!114 &437855926
+--- !u!114 &465330434
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 437855923}
+  m_GameObject: {fileID: 465330431}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -1073,12 +1146,12 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!222 &437855927
+--- !u!222 &465330435
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 437855923}
+  m_GameObject: {fileID: 465330431}
 --- !u!1 &498019945
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,7 +1225,7 @@ GameObject:
   - component: {fileID: 526102221}
   m_Layer: 0
   m_Name: 8
-  m_TagString: Untagged
+  m_TagString: PlayButton1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1170,14 +1243,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 8: Make Play more noticable'
   Description: Players report that they sometimes feel lost
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 6720bba1063a5bf47bc932a7701791dd, type: 2}
   - {fileID: 114133477520621304, guid: 7937ad551e6da7b49955199e961f47ad, type: 2}
   - {fileID: 114133477520621304, guid: cc2f22076c230d54c8a940ac9f6514ab, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 1821130024}
-  createdItems: []
   Tag: PlayButton1
   RequiredAppealingPoints: 1
   FlexibleRequirement: 1
@@ -1332,13 +1404,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 35: Add some more offers'
   Description: We still can use that dead space over there
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 6b780e0064ba9524180110e7e0790b29, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 80549374}
   - {fileID: 432122602}
-  createdItems: []
   Tag: Offer3
   DontHasMode: 0
 --- !u!4 &542320374
@@ -1365,7 +1436,7 @@ GameObject:
   - component: {fileID: 547380582}
   m_Layer: 0
   m_Name: 4
-  m_TagString: Untagged
+  m_TagString: Close
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1384,12 +1455,11 @@ MonoBehaviour:
   Title: 'Task 4: Make Close bigger'
   Description: Our feedback department received some complains that it is hard to
     tap
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 43832f5d54dde604987d37a3a87ec8aa, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 168499697}
-  createdItems: []
   Tag: Close
   RequiredSize: 1
   FlexibleRequirement: 1
@@ -1407,87 +1477,6 @@ Transform:
   m_Father: {fileID: 799754455}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &558527952
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 558527953}
-  - component: {fileID: 558527956}
-  - component: {fileID: 558527955}
-  - component: {fileID: 558527954}
-  m_Layer: 5
-  m_Name: BoardLine(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &558527953
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 558527952}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.998901, y: 9.998901, z: 0}
-  m_LocalScale: {x: 15, y: 0.02, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1978473215}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -92.5011, y: -166.5011}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &558527954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 558527952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedScale: 1.3
---- !u!114 &558527955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 558527952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &558527956
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 558527952}
 --- !u!1 &560550488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,7 +1488,7 @@ GameObject:
   - component: {fileID: 560550489}
   m_Layer: 0
   m_Name: 7
-  m_TagString: Untagged
+  m_TagString: Close
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1517,12 +1506,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 4: Make Close smaller'
   Description: People leave the game too often
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 43832f5d54dde604987d37a3a87ec8aa, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 526102221}
-  createdItems: []
   Tag: Close
   RequiredSize: 1
   FlexibleRequirement: 1
@@ -1540,6 +1528,54 @@ Transform:
   m_Father: {fileID: 799754455}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &578613534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 578613535}
+  - component: {fileID: 578613536}
+  m_Layer: 0
+  m_Name: 1 amount play
+  m_TagString: PlayButton1
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &578613535
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578613534}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2062794184}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &578613536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578613534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c9c2c477e5cb234a80b42aaafc5d1af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 
+  Description: So many Play buttons confuse players
+  unlockedTools: []
+  disabledTasks: []
+  enabledTasks: []
+  Tag: PlayButton1
+  MaxAmount: 1
+  LessMode: 0
 --- !u!1 &597117809
 GameObject:
   m_ObjectHideFlags: 0
@@ -1582,12 +1618,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 34: Remove Level Goals'
   Description: We need more shop offers
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 092fe9dab6a30ab449ab05d8efcf4a41, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 542320373}
-  createdItems: []
   Tag: Goals
   DontHasMode: 1
 --- !u!1 &622447964
@@ -1632,12 +1667,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 16: Add daily reward'
   Description: Let's encourage player retention
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 7f56e0d7f4bf7b243bd2a079d18e5eb7, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 238423385}
-  createdItems: []
   Tag: Gift
   DontHasMode: 0
 --- !u!1 &631542157
@@ -1669,12 +1703,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 30: Delete Close button'
   Description: People still manage to leave the game through it
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 43832f5d54dde604987d37a3a87ec8aa, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 2095075719}
-  createdItems: []
   Tag: Close
   DontHasMode: 1
 --- !u!4 &631542159
@@ -1690,168 +1723,54 @@ Transform:
   m_Father: {fileID: 799754455}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &723378686
+--- !u!1 &745620777
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 723378687}
-  - component: {fileID: 723378690}
-  - component: {fileID: 723378689}
-  - component: {fileID: 723378688}
-  m_Layer: 5
-  m_Name: BoardLine(Clone)
+  - component: {fileID: 745620778}
+  - component: {fileID: 745620779}
+  m_Layer: 0
+  m_Name: 15 remove old char
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &723378687
-RectTransform:
+--- !u!4 &745620778
+Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 723378686}
+  m_GameObject: {fileID: 745620777}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.998901, y: 194.97859, z: 0}
-  m_LocalScale: {x: 15, y: 0.02, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1978473215}
-  m_RootOrder: 11
+  m_Father: {fileID: 1814247784}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -92.5011, y: 18.478592}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &723378688
+--- !u!114 &745620779
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 723378686}
+  m_GameObject: {fileID: 745620777}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
+  m_Script: {fileID: 11500000, guid: 0fd8596d2dc068b47acac14e9f74c8ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedScale: 1.3
---- !u!114 &723378689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 723378686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &723378690
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 723378686}
---- !u!1 &737949226
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 737949227}
-  - component: {fileID: 737949230}
-  - component: {fileID: 737949229}
-  - component: {fileID: 737949228}
-  m_Layer: 5
-  m_Name: BoardLine(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &737949227
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 737949226}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.998901, y: 342.9624, z: 0}
-  m_LocalScale: {x: 15, y: 0.02, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1978473215}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -92.5011, y: 166.4624}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &737949228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 737949226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedScale: 1.3
---- !u!114 &737949229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 737949226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &737949230
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 737949226}
+  Title: 
+  Description: Dont't forget to remove old Character asset
+  unlockedTools:
+  - {fileID: 114245401923476932, guid: c3d5333447eb6f44c9ad2aac70ae9fda, type: 2}
+  disabledTasks: []
+  enabledTasks: []
+  Tag: Char1
+  DontHasMode: 1
 --- !u!1 &751329477
 GameObject:
   m_ObjectHideFlags: 0
@@ -2015,7 +1934,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TasksNode: {fileID: 799754455}
-  Toolbar: {fileID: 1126710197}
   View: {fileID: 888032658}
   FirstTask: {fileID: 1855244398}
 --- !u!1 &801639792
@@ -2100,6 +2018,87 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
+--- !u!1 &802118421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 802118422}
+  - component: {fileID: 802118425}
+  - component: {fileID: 802118424}
+  - component: {fileID: 802118423}
+  m_Layer: 5
+  m_Name: BoardLine(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &802118422
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 802118421}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.998901, y: 194.97859, z: 0}
+  m_LocalScale: {x: 15, y: 0.02, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1978473215}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -92.5011, y: 18.478592}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &802118423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 802118421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 1.3
+--- !u!114 &802118424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 802118421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &802118425
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 802118421}
 --- !u!1 &808371654
 GameObject:
   m_ObjectHideFlags: 0
@@ -2142,12 +2141,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 25: Make Character bigger'
   Description: Should look lovely on promos
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: a737c7ed7e4e91446b00bd32bcfc1c13, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 1227491898}
-  createdItems: []
   Tag: Char2
   RequiredSize: 1
   FlexibleRequirement: 1
@@ -2194,12 +2192,173 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: URGENT TASK
   Description: Not enough dead space!
-  unlockedPrefabs: []
+  unlockedTools: []
   disabledTasks: []
   enabledTasks: []
-  createdItems: []
   Tag: 
   DontHasMode: 1
+--- !u!1 &846152400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 846152401}
+  - component: {fileID: 846152404}
+  - component: {fileID: 846152403}
+  - component: {fileID: 846152402}
+  m_Layer: 5
+  m_Name: BoardLine(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &846152401
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 846152400}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.998901, y: 231.97453, z: 0}
+  m_LocalScale: {x: 15, y: 0.02, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1978473215}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -92.5011, y: 55.474533}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &846152402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 846152400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 1.3
+--- !u!114 &846152403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 846152400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &846152404
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 846152400}
+--- !u!1 &862390199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 862390200}
+  - component: {fileID: 862390203}
+  - component: {fileID: 862390202}
+  - component: {fileID: 862390201}
+  m_Layer: 5
+  m_Name: BoardLine(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &862390200
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 862390199}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.998901, y: 9.998901, z: 0}
+  m_LocalScale: {x: 15, y: 0.02, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1978473215}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -92.5011, y: -166.5011}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &862390201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 862390199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 1.3
+--- !u!114 &862390202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 862390199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &862390203
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 862390199}
 --- !u!1 &863861497
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,7 +2370,7 @@ GameObject:
   - component: {fileID: 863861499}
   m_Layer: 0
   m_Name: 6
-  m_TagString: Untagged
+  m_TagString: Char1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2242,14 +2401,94 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 6: Add cute Character'
   Description: According to QA female audience wants to see cute male character
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: c3d5333447eb6f44c9ad2aac70ae9fda, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 560550489}
-  createdItems: []
   Tag: Char1
   DontHasMode: 0
+--- !u!1 &878453133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 878453134}
+  - component: {fileID: 878453137}
+  - component: {fileID: 878453136}
+  - component: {fileID: 878453135}
+  m_Layer: 5
+  m_Name: BoardLine(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &878453134
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 878453133}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.998901, y: 305.9664, z: 0}
+  m_LocalScale: {x: 15, y: 0.02, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1978473215}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -92.5011, y: 129.4664}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &878453135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 878453133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 1.3
+--- !u!114 &878453136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 878453133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &878453137
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 878453133}
 --- !u!1 &888032652
 GameObject:
   m_ObjectHideFlags: 0
@@ -2402,12 +2641,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 18: Add Sale sign'
   Description: Double all prices, then cut one third... you know the drill.
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 6cae8fec3d96786429426c3d60cf3337, type: 2}
   disabledTasks: []
   enabledTasks:
-  - {fileID: 0}
-  createdItems: []
+  - {fileID: 1906569290}
   Tag: Offer1
   DontHasMode: 0
 --- !u!4 &1041236894
@@ -2465,13 +2703,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 28: Make second Play button Premium only'
   Description: Competitive players like to feel elite
-  unlockedPrefabs:
-  - {fileID: 114245401923476932, guid: f547579ff212c5148978937a99dac1de, type: 2}
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 6f24c6e76c49bfa4b95b1a40bb90febf, type: 2}
+  - {fileID: 114245401923476932, guid: f547579ff212c5148978937a99dac1de, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 1269568794}
-  createdItems: []
   Tag1: PlayButton2
   Tag2: Premium
 --- !u!1 &1115856951
@@ -2517,12 +2754,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 37: Delete Play buttons'
   Description: Monthly income is not expected to drop
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 6720bba1063a5bf47bc932a7701791dd, type: 2}
-  disabledTasks: []
+  disabledTasks:
+  - {fileID: 1175446920}
+  - {fileID: 578613536}
+  - {fileID: 1653626103}
+  - {fileID: 1176089172}
+  - {fileID: 2146237086}
+  - {fileID: 1945717442}
   enabledTasks:
   - {fileID: 2017095840}
-  createdItems: []
   Tag: PlayButton1
   DontHasMode: 1
 --- !u!1 &1126710196
@@ -2536,6 +2778,7 @@ GameObject:
   - component: {fileID: 1126710201}
   - component: {fileID: 1126710199}
   - component: {fileID: 1126710198}
+  - component: {fileID: 1126710200}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -2597,6 +2840,17 @@ MonoBehaviour:
   m_Spacing: {x: 7, y: 7}
   m_Constraint: 1
   m_ConstraintCount: 2
+--- !u!114 &1126710200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1126710196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca059025e594fc5459aa59ff6fcb5e8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &1126710201
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2672,6 +2926,101 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1137479511}
+--- !u!1 &1175446918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1175446919}
+  - component: {fileID: 1175446920}
+  m_Layer: 0
+  m_Name: 1 bottom play
+  m_TagString: PlayButton1
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1175446919
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1175446918}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2062794184}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1175446920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1175446918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7644a6dbe80d6ae4692aae8315ccc127, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 
+  Description: Move Play button at the bottom
+  unlockedTools:
+  - {fileID: 114245401923476932, guid: 6720bba1063a5bf47bc932a7701791dd, type: 2}
+  disabledTasks: []
+  enabledTasks: []
+  Tag: PlayButton1
+  EnabledArea: 3
+  AmountOfLegalLines: 3
+--- !u!1 &1176089170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1176089171}
+  - component: {fileID: 1176089172}
+  m_Layer: 0
+  m_Name: 1 hard overlap play
+  m_TagString: PlayButton1
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1176089171
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1176089170}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2062794184}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1176089172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1176089170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0197ca7d16b0c1e4a94caf1f216b8df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 
+  Description: Play button is overlapped
+  unlockedTools: []
+  disabledTasks: []
+  enabledTasks: []
+  Tag: PlayButton1
 --- !u!1 &1178891334
 GameObject:
   m_ObjectHideFlags: 0
@@ -2714,99 +3063,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 24: Make Giftbox more APPEALING'
   Description: Our CEO's mom told she wants more beautiful Giftbox
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 7f56e0d7f4bf7b243bd2a079d18e5eb7, type: 2}
   - {fileID: 114133477520621304, guid: 7937ad551e6da7b49955199e961f47ad, type: 2}
   - {fileID: 114133477520621304, guid: cc2f22076c230d54c8a940ac9f6514ab, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 808371656}
-  createdItems: []
   Tag: Gift
   RequiredAppealingPoints: 1
   FlexibleRequirement: 1
   LessMode: 0
---- !u!1 &1215298631
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1215298632}
-  - component: {fileID: 1215298635}
-  - component: {fileID: 1215298634}
-  - component: {fileID: 1215298633}
-  m_Layer: 5
-  m_Name: BoardLine(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1215298632
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1215298631}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.998901, y: 83.99078, z: 0}
-  m_LocalScale: {x: 15, y: 0.02, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1978473215}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -92.5011, y: -92.50922}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1215298633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1215298631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedScale: 1.3
---- !u!114 &1215298634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1215298631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1215298635
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1215298631}
 --- !u!1 &1227491897
 GameObject:
   m_ObjectHideFlags: 0
@@ -2836,16 +3103,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 26: Make offers look better'
   Description: They look kinda lost
-  unlockedPrefabs:
-  - {fileID: 114245401923476932, guid: 6cae8fec3d96786429426c3d60cf3337, type: 2}
-  - {fileID: 114245401923476932, guid: def745925b79e834e972ac513b33f8ad, type: 2}
+  unlockedTools:
   - {fileID: 114133477520621304, guid: 7937ad551e6da7b49955199e961f47ad, type: 2}
   - {fileID: 114133477520621304, guid: cc2f22076c230d54c8a940ac9f6514ab, type: 2}
+  - {fileID: 114245401923476932, guid: 6cae8fec3d96786429426c3d60cf3337, type: 2}
+  - {fileID: 114245401923476932, guid: def745925b79e834e972ac513b33f8ad, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 1445642652}
   - {fileID: 362752678}
-  createdItems: []
   Tag: Offer
   RequiredAppealingPoints: 1
   FlexibleRequirement: 1
@@ -3155,14 +3421,94 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 29: Add VIP Giftbox for top payers'
   Description: Spending money in the shop should feel rewarding
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 9564dcb0d35b36a40a6306a3f3cc41ca, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 631542158}
-  createdItems: []
   Tag: VipGift
   DontHasMode: 0
+--- !u!1 &1281863816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1281863817}
+  - component: {fileID: 1281863820}
+  - component: {fileID: 1281863819}
+  - component: {fileID: 1281863818}
+  m_Layer: 5
+  m_Name: BoardLine(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1281863817
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1281863816}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 194.97859, y: 9.998901, z: 0}
+  m_LocalScale: {x: 15, y: 0.02, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1978473215}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 92.47859, y: -166.5011}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1281863818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1281863816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 1.3
+--- !u!114 &1281863819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1281863816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1281863820
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1281863816}
 --- !u!1 &1294295564
 GameObject:
   m_ObjectHideFlags: 0
@@ -3197,6 +3543,168 @@ RectTransform:
   m_AnchoredPosition: {x: 133.64, y: 21.5}
   m_SizeDelta: {x: 112.5, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1309040635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1309040636}
+  - component: {fileID: 1309040639}
+  - component: {fileID: 1309040638}
+  - component: {fileID: 1309040637}
+  m_Layer: 5
+  m_Name: BoardLine(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1309040636
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1309040635}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.998901, y: 268.97046, z: 0}
+  m_LocalScale: {x: 15, y: 0.02, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1978473215}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -92.5011, y: 92.47046}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1309040637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1309040635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 1.3
+--- !u!114 &1309040638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1309040635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1309040639
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1309040635}
+--- !u!1 &1316920790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1316920791}
+  - component: {fileID: 1316920794}
+  - component: {fileID: 1316920793}
+  - component: {fileID: 1316920792}
+  m_Layer: 5
+  m_Name: BoardLine(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1316920791
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1316920790}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.998901, y: 83.99078, z: 0}
+  m_LocalScale: {x: 15, y: 0.02, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1978473215}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -92.5011, y: -92.50922}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1316920792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1316920790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 1.3
+--- !u!114 &1316920793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1316920790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1316920794
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1316920790}
 --- !u!1 &1366260535
 GameObject:
   m_ObjectHideFlags: 0
@@ -3307,96 +3815,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 13: Block second Play button until level 50'
   Description: We need to attract competitive players
-  unlockedPrefabs:
-  - {fileID: 114245401923476932, guid: 6f24c6e76c49bfa4b95b1a40bb90febf, type: 2}
+  unlockedTools:
   - {fileID: 114245401923476932, guid: d81b17f1d200f3e4ca528c3853b74a50, type: 2}
+  - {fileID: 114245401923476932, guid: 6f24c6e76c49bfa4b95b1a40bb90febf, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 319966020}
-  createdItems: []
   Tag1: PlayButton2
   Tag2: Block
---- !u!1 &1383182610
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1383182611}
-  - component: {fileID: 1383182614}
-  - component: {fileID: 1383182613}
-  - component: {fileID: 1383182612}
-  m_Layer: 5
-  m_Name: BoardLine(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1383182611
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1383182610}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.998901, y: 305.9664, z: 0}
-  m_LocalScale: {x: 15, y: 0.02, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1978473215}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -92.5011, y: 129.4664}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1383182612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1383182610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedScale: 1.3
---- !u!114 &1383182613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1383182610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1383182614
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1383182610}
 --- !u!1 &1383665893
 GameObject:
   m_ObjectHideFlags: 0
@@ -3439,12 +3865,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 39: Make VIP Giftbox bigger'
   Description: It contains more loot, right?
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 9564dcb0d35b36a40a6306a3f3cc41ca, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 1515410886}
-  createdItems: []
   Tag: VipGift
   RequiredSize: 1
   FlexibleRequirement: 1
@@ -3493,95 +3918,13 @@ MonoBehaviour:
   Title: 'Task 27: Make Character female'
   Description: Just minor tweak for upcoming asian release candidate. Shouldn't take
     long.
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: da48662cd3f6cde48a1d495ab45063b5, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 1075477503}
-  createdItems: []
   Tag: Char3
   DontHasMode: 0
---- !u!1 &1498873826
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1498873827}
-  - component: {fileID: 1498873830}
-  - component: {fileID: 1498873829}
-  - component: {fileID: 1498873828}
-  m_Layer: 5
-  m_Name: BoardLine(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1498873827
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1498873826}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 157.98267, y: 9.998901, z: 0}
-  m_LocalScale: {x: 15, y: 0.02, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1978473215}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 55.482666, y: -166.5011}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1498873828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1498873826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedScale: 1.3
---- !u!114 &1498873829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1498873826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1498873830
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1498873826}
 --- !u!1 &1515410884
 GameObject:
   m_ObjectHideFlags: 0
@@ -3625,10 +3968,9 @@ MonoBehaviour:
   Title: 'Task LD40: Awesome job, buddy!'
   Description: 'You are a natural. Now listen: it''s your last chance to make a screenshot
     and then head towards boss office and get your cut.'
-  unlockedPrefabs: []
+  unlockedTools: []
   disabledTasks: []
   enabledTasks: []
-  createdItems: []
 --- !u!1 &1522355246
 GameObject:
   m_ObjectHideFlags: 0
@@ -3800,6 +4142,87 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1580311489}
+--- !u!1 &1588097706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1588097707}
+  - component: {fileID: 1588097710}
+  - component: {fileID: 1588097709}
+  - component: {fileID: 1588097708}
+  m_Layer: 5
+  m_Name: BoardLine(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1588097707
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1588097706}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.998901, y: 342.9624, z: 0}
+  m_LocalScale: {x: 15, y: 0.02, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1978473215}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -92.5011, y: 166.4624}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1588097708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1588097706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 1.3
+--- !u!114 &1588097709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1588097706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1588097710
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1588097706}
 --- !u!1 &1609447893
 GameObject:
   m_ObjectHideFlags: 0
@@ -3916,168 +4339,55 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1609447893}
---- !u!1 &1637537409
+--- !u!1 &1653626101
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 1637537410}
-  - component: {fileID: 1637537413}
-  - component: {fileID: 1637537412}
-  - component: {fileID: 1637537411}
-  m_Layer: 5
-  m_Name: BoardLine(Clone)
-  m_TagString: Untagged
+  - component: {fileID: 1653626102}
+  - component: {fileID: 1653626103}
+  m_Layer: 0
+  m_Name: 1 tiny play
+  m_TagString: PlayButton1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1637537410
-RectTransform:
+--- !u!4 &1653626102
+Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1637537409}
+  m_GameObject: {fileID: 1653626101}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.998901, y: 231.97453, z: 0}
-  m_LocalScale: {x: 15, y: 0.02, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1978473215}
-  m_RootOrder: 12
+  m_Father: {fileID: 2062794184}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -92.5011, y: 55.474533}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1637537411
+--- !u!114 &1653626103
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1637537409}
+  m_GameObject: {fileID: 1653626101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
+  m_Script: {fileID: 11500000, guid: 06d652afd4f69124daa002db91b06f53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedScale: 1.3
---- !u!114 &1637537412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1637537409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1637537413
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1637537409}
---- !u!1 &1664434995
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1664434996}
-  - component: {fileID: 1664434999}
-  - component: {fileID: 1664434998}
-  - component: {fileID: 1664434997}
-  m_Layer: 5
-  m_Name: BoardLine(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1664434996
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1664434995}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 46.994843, y: 9.998901, z: 0}
-  m_LocalScale: {x: 15, y: 0.02, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1978473215}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55.505157, y: -166.5011}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1664434997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1664434995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedScale: 1.3
---- !u!114 &1664434998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1664434995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1664434999
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1664434995}
+  Title: 
+  Description: It's impossible to tap Play button
+  unlockedTools: []
+  disabledTasks: []
+  enabledTasks: []
+  Tag: PlayButton1
+  RequiredSize: 2
+  FlexibleRequirement: 0
+  LessMode: 0
 --- !u!1 &1717236165
 GameObject:
   m_ObjectHideFlags: 0
@@ -4111,87 +4421,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1745827029
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1745827030}
-  - component: {fileID: 1745827033}
-  - component: {fileID: 1745827032}
-  - component: {fileID: 1745827031}
-  m_Layer: 5
-  m_Name: BoardLine(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1745827030
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1745827029}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 83.99078, y: 9.998901, z: 0}
-  m_LocalScale: {x: 15, y: 0.02, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1978473215}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.509216, y: -166.5011}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1745827031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1745827029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedScale: 1.3
---- !u!114 &1745827032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1745827029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1745827033
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1745827029}
 --- !u!1 &1749111988
 GameObject:
   m_ObjectHideFlags: 0
@@ -4221,12 +4450,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 21: Add some more expencive offers'
   Description: Tag it with "Most popular" and who cares nobody ever bought it?
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: def745925b79e834e972ac513b33f8ad, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 1768462576}
-  createdItems: []
   Tag: Offer2
   DontHasMode: 0
 --- !u!4 &1749111990
@@ -4284,11 +4512,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 22: Make some minor adjustments'
   Description: A new device is on the market so we must adapt
-  unlockedPrefabs: []
+  unlockedTools: []
   disabledTasks: []
   enabledTasks:
   - {fileID: 1895297391}
-  createdItems: []
   NewWidth: 6
   NewHeight: 7
   CameraShift: {x: 0.7, y: -0.7, z: 0}
@@ -4317,7 +4544,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1966761603}
   m_Father: {fileID: 799754455}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4334,14 +4562,95 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 32: Make Character chest more appealing'
   Description: New players seem to like visual feedback
-  unlockedPrefabs:
+  unlockedTools:
+  - {fileID: 114245401923476932, guid: da48662cd3f6cde48a1d495ab45063b5, type: 2}
   - {fileID: 114245401923476932, guid: f5a6efe517b8ad84a91861cb13083b4c, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 597117811}
-  createdItems: []
   Tag: Char3Boobs
   DontHasMode: 0
+--- !u!1 &1782175441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1782175442}
+  - component: {fileID: 1782175445}
+  - component: {fileID: 1782175444}
+  - component: {fileID: 1782175443}
+  m_Layer: 5
+  m_Name: BoardLine(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1782175442
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782175441}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 9.998901, y: 9.998901, z: 0}
+  m_LocalScale: {x: 15, y: 0.02, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1978473215}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -92.5011, y: -166.5011}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1782175443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782175441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 1.3
+--- !u!114 &1782175444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782175441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1782175445
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782175441}
 --- !u!1 &1813659279
 GameObject:
   m_ObjectHideFlags: 0
@@ -4385,7 +4694,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1814247784}
   - component: {fileID: 1814247786}
-  - component: {fileID: 1814247785}
   m_Layer: 0
   m_Name: 15
   m_TagString: Untagged
@@ -4402,29 +4710,11 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 745620778}
   m_Father: {fileID: 799754455}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1814247785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1814247783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fd8596d2dc068b47acac14e9f74c8ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Title: 'Task 15: Change Character to boy of color'
-  Description: Dont't forget to remove old Character asset
-  unlockedPrefabs: []
-  disabledTasks: []
-  enabledTasks: []
-  createdItems: []
-  Tag: Char1
-  DontHasMode: 1
 --- !u!114 &1814247786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4438,12 +4728,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 15: Change Character to boy of color'
   Description: We need more divercity
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: a737c7ed7e4e91446b00bd32bcfc1c13, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 622447966}
-  createdItems: []
   Tag: Char2
   DontHasMode: 0
 --- !u!1 &1820723758
@@ -4531,7 +4820,7 @@ GameObject:
   - component: {fileID: 1821130024}
   m_Layer: 0
   m_Name: 9
-  m_TagString: Untagged
+  m_TagString: Goals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4562,14 +4851,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 9: Make Goals nicer'
   Description: Goals section should invite to play
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114133477520621304, guid: 7937ad551e6da7b49955199e961f47ad, type: 2}
-  - {fileID: 114245401923476932, guid: 092fe9dab6a30ab449ab05d8efcf4a41, type: 2}
   - {fileID: 114133477520621304, guid: cc2f22076c230d54c8a940ac9f6514ab, type: 2}
+  - {fileID: 114245401923476932, guid: 092fe9dab6a30ab449ab05d8efcf4a41, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 1897159010}
-  createdItems: []
   Tag: Goals
   RequiredAppealingPoints: 1
   FlexibleRequirement: 1
@@ -4585,7 +4873,7 @@ GameObject:
   - component: {fileID: 1855244398}
   m_Layer: 0
   m_Name: 0
-  m_TagString: Untagged
+  m_TagString: Board
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4616,93 +4904,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 1: Add Board'
   Description: becouse
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: cba6b737e20f72444b07983749b8a4f3, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 2062794185}
-  createdItems: []
---- !u!1 &1861008316
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1861008317}
-  - component: {fileID: 1861008320}
-  - component: {fileID: 1861008319}
-  - component: {fileID: 1861008318}
-  m_Layer: 5
-  m_Name: BoardLine(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1861008317
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1861008316}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 194.97859, y: 9.998901, z: 0}
-  m_LocalScale: {x: 15, y: 0.02, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1978473215}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 92.47859, y: -166.5011}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1861008318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1861008316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedScale: 1.3
---- !u!114 &1861008319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1861008316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1861008320
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1861008316}
+  - {fileID: 1175446920}
+  - {fileID: 578613536}
+  - {fileID: 1653626103}
+  - {fileID: 1176089172}
+  - {fileID: 2146237086}
 --- !u!1 &1895297390
 GameObject:
   m_ObjectHideFlags: 0
@@ -4732,13 +4943,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 23: Make offers bigger'
   Description: 'Players still manage to tap other places sometimes '
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 6cae8fec3d96786429426c3d60cf3337, type: 2}
   - {fileID: 114245401923476932, guid: def745925b79e834e972ac513b33f8ad, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 1178891336}
-  createdItems: []
   Tag: Offer
   RequiredSize: 1
   FlexibleRequirement: 1
@@ -4767,7 +4977,7 @@ GameObject:
   - component: {fileID: 1897159010}
   m_Layer: 0
   m_Name: 10
-  m_TagString: Untagged
+  m_TagString: Close
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4785,12 +4995,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 10: Move Close to the corner'
   Description: It will improve player experience
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 43832f5d54dde604987d37a3a87ec8aa, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 10955259}
-  createdItems: []
   Tag: Close
   EnabledArea: 2
   AmountOfLegalLines: 2
@@ -4849,13 +5058,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 19: Add rewards for logging into FB'
   Description: Small Giftbox should be nice
-  unlockedPrefabs:
-  - {fileID: 114245401923476932, guid: 7f56e0d7f4bf7b243bd2a079d18e5eb7, type: 2}
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 1c0fca1baa0983e489864b374df2435a, type: 2}
+  - {fileID: 114245401923476932, guid: 7f56e0d7f4bf7b243bd2a079d18e5eb7, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 340969730}
-  createdItems: []
   ObjTag: FBLogin
   GiftTag: Gift
 --- !u!1 &1908751831
@@ -4909,87 +5117,6 @@ MonoBehaviour:
   Height: 9
   LinePrefub: {fileID: 224999392619053488, guid: 23a42a28e384a8743b436fb9d8807871,
     type: 2}
---- !u!1 &1929324344
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1929324345}
-  - component: {fileID: 1929324348}
-  - component: {fileID: 1929324347}
-  - component: {fileID: 1929324346}
-  m_Layer: 5
-  m_Name: BoardLine(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1929324345
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1929324344}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.998901, y: 268.97046, z: 0}
-  m_LocalScale: {x: 15, y: 0.02, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1978473215}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -92.5011, y: 92.47046}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1929324346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1929324344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedScale: 1.3
---- !u!114 &1929324347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1929324344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1929324348
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1929324344}
 --- !u!1 &1932318529
 GameObject:
   m_ObjectHideFlags: 0
@@ -5001,7 +5128,7 @@ GameObject:
   - component: {fileID: 1932318530}
   m_Layer: 0
   m_Name: 2
-  m_TagString: Untagged
+  m_TagString: Close
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5019,12 +5146,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 2: Add Close button'
   Description: We must think of people who doesn't want to play the game at all
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 43832f5d54dde604987d37a3a87ec8aa, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 402133098}
-  createdItems: []
   Tag: Close
   DontHasMode: 0
 --- !u!4 &1932318531
@@ -5036,21 +5162,70 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1945717441}
   m_Father: {fileID: 799754455}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1950039214
+--- !u!1 &1945717440
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 1950039215}
-  - component: {fileID: 1950039218}
-  - component: {fileID: 1950039217}
-  - component: {fileID: 1950039216}
+  - component: {fileID: 1945717441}
+  - component: {fileID: 1945717442}
+  m_Layer: 0
+  m_Name: 1 have play
+  m_TagString: PlayButton1
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1945717441
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1945717440}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1932318531}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1945717442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1945717440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd8596d2dc068b47acac14e9f74c8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 
+  Description: We need a Play button to get money
+  unlockedTools:
+  - {fileID: 114245401923476932, guid: 6720bba1063a5bf47bc932a7701791dd, type: 2}
+  disabledTasks: []
+  enabledTasks: []
+  Tag: PlayButton1
+  DontHasMode: 0
+--- !u!1 &1959644747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1959644748}
+  - component: {fileID: 1959644751}
+  - component: {fileID: 1959644750}
+  - component: {fileID: 1959644749}
   m_Layer: 5
   m_Name: BoardLine(Clone)
   m_TagString: Untagged
@@ -5058,42 +5233,42 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1950039215
+--- !u!224 &1959644748
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1950039214}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.998901, y: 157.98267, z: 0}
+  m_GameObject: {fileID: 1959644747}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 46.994843, y: 9.998901, z: 0}
   m_LocalScale: {x: 15, y: 0.02, z: 1}
   m_Children: []
   m_Father: {fileID: 1978473215}
-  m_RootOrder: 10
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -92.5011, y: -18.517334}
+  m_AnchoredPosition: {x: -55.505157, y: -166.5011}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1950039216
+--- !u!114 &1959644749
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1950039214}
+  m_GameObject: {fileID: 1959644747}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speedScale: 1.3
---- !u!114 &1950039217
+--- !u!114 &1959644750
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1950039214}
+  m_GameObject: {fileID: 1959644747}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -5115,12 +5290,61 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!222 &1950039218
+--- !u!222 &1959644751
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1950039214}
+  m_GameObject: {fileID: 1959644747}
+--- !u!1 &1966761602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1966761603}
+  - component: {fileID: 1966761604}
+  m_Layer: 0
+  m_Name: 32 boobs place
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1966761603
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1966761602}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1772512225}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1966761604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1966761602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74bbd325fefd9f94c85033e5dd13c98e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: 
+  Description: Do you know where should be the Boobs?
+  unlockedTools:
+  - {fileID: 114245401923476932, guid: da48662cd3f6cde48a1d495ab45063b5, type: 2}
+  - {fileID: 114245401923476932, guid: f5a6efe517b8ad84a91861cb13083b4c, type: 2}
+  disabledTasks: []
+  enabledTasks: []
+  ObjTag: Char3
+  GiftTag: Char3Boobs
 --- !u!1 &1978473214
 GameObject:
   m_ObjectHideFlags: 0
@@ -5149,22 +5373,22 @@ RectTransform:
   m_LocalPosition: {x: -10, y: -10, z: 0}
   m_LocalScale: {x: 1.0001097, y: 1.0001097, z: 1.0001097}
   m_Children:
-  - {fileID: 225581401}
-  - {fileID: 1664434996}
-  - {fileID: 1745827030}
-  - {fileID: 437855924}
-  - {fileID: 1498873827}
-  - {fileID: 1861008317}
-  - {fileID: 558527953}
-  - {fileID: 213513894}
-  - {fileID: 1215298632}
-  - {fileID: 2138440695}
-  - {fileID: 1950039215}
-  - {fileID: 723378687}
-  - {fileID: 1637537410}
-  - {fileID: 1929324345}
-  - {fileID: 1383182611}
-  - {fileID: 737949227}
+  - {fileID: 1782175442}
+  - {fileID: 1959644748}
+  - {fileID: 90168729}
+  - {fileID: 244197698}
+  - {fileID: 1993147648}
+  - {fileID: 1281863817}
+  - {fileID: 862390200}
+  - {fileID: 465330432}
+  - {fileID: 1316920791}
+  - {fileID: 105854478}
+  - {fileID: 2060080937}
+  - {fileID: 802118422}
+  - {fileID: 846152401}
+  - {fileID: 1309040636}
+  - {fileID: 878453134}
+  - {fileID: 1588097707}
   m_Father: {fileID: 1908751832}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5218,6 +5442,87 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
+--- !u!1 &1993147647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1993147648}
+  - component: {fileID: 1993147651}
+  - component: {fileID: 1993147650}
+  - component: {fileID: 1993147649}
+  m_Layer: 5
+  m_Name: BoardLine(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1993147648
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1993147647}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 157.98267, y: 9.998901, z: 0}
+  m_LocalScale: {x: 15, y: 0.02, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1978473215}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 55.482666, y: -166.5011}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1993147649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1993147647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 1.3
+--- !u!114 &1993147650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1993147647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1993147651
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1993147647}
 --- !u!1 &2017095838
 GameObject:
   m_ObjectHideFlags: 0
@@ -5260,12 +5565,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 38: We need more boobs'
   Description: We must be one step ahead our concurents
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: f5a6efe517b8ad84a91861cb13083b4c, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 1383665895}
-  createdItems: []
   Tag: Char3Boobs
   RequiredSize: 1
   FlexibleRequirement: 1
@@ -5312,16 +5616,96 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 12: Make Play bigger'
   Description: People hardly see Play button
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 6720bba1063a5bf47bc932a7701791dd, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 1377713721}
-  createdItems: []
   Tag: PlayButton1
   RequiredSize: 3
   FlexibleRequirement: 1
   LessMode: 0
+--- !u!1 &2060080936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2060080937}
+  - component: {fileID: 2060080940}
+  - component: {fileID: 2060080939}
+  - component: {fileID: 2060080938}
+  m_Layer: 5
+  m_Name: BoardLine(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2060080937
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2060080936}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.998901, y: 157.98267, z: 0}
+  m_LocalScale: {x: 15, y: 0.02, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1978473215}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -92.5011, y: -18.517334}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2060080938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2060080936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 1.3
+--- !u!114 &2060080939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2060080936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &2060080940
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2060080936}
 --- !u!1 &2062794183
 GameObject:
   m_ObjectHideFlags: 0
@@ -5333,7 +5717,7 @@ GameObject:
   - component: {fileID: 2062794185}
   m_Layer: 0
   m_Name: 1
-  m_TagString: Untagged
+  m_TagString: PlayButton1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5347,7 +5731,12 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1175446919}
+  - {fileID: 578613535}
+  - {fileID: 1653626102}
+  - {fileID: 1176089171}
+  - {fileID: 2146237085}
   m_Father: {fileID: 799754455}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5364,12 +5753,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 1: Add Play button.'
   Description: Players don't pay money without a gameplay.
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 6720bba1063a5bf47bc932a7701791dd, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 1932318530}
-  createdItems: []
+  - {fileID: 1945717442}
   Tag: PlayButton1
   DontHasMode: 0
 --- !u!1 &2083588216
@@ -5414,11 +5803,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 
   Description: We don't need Play btn2 too!
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 6f24c6e76c49bfa4b95b1a40bb90febf, type: 2}
   disabledTasks: []
   enabledTasks: []
-  createdItems: []
   Tag: PlayButton2
   DontHasMode: 1
 --- !u!1 &2095075717
@@ -5463,12 +5851,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 'Task 31: Make Play 1 less appealing'
   Description: We should attract audience toward VIP Play button
-  unlockedPrefabs:
+  unlockedTools:
   - {fileID: 114245401923476932, guid: 6720bba1063a5bf47bc932a7701791dd, type: 2}
   disabledTasks: []
   enabledTasks:
   - {fileID: 1772512226}
-  createdItems: []
   Tag: PlayButton1
   RequiredAppealingPoints: 0
   FlexibleRequirement: 0
@@ -5582,88 +5969,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemsNode: {fileID: 1717236166}
-  timeBeforeHidingGUI: 1
-  hidingSpeed: 0.8
+  timeBeforeHidingGUI: 0.5
+  hidingSpeed: 2
   showingSpeed: 3
   mouseEpsilon: 2
---- !u!1 &2138440694
+--- !u!1 &2146237084
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 2138440695}
-  - component: {fileID: 2138440698}
-  - component: {fileID: 2138440697}
-  - component: {fileID: 2138440696}
-  m_Layer: 5
-  m_Name: BoardLine(Clone)
-  m_TagString: Untagged
+  - component: {fileID: 2146237085}
+  - component: {fileID: 2146237086}
+  m_Layer: 0
+  m_Name: 1 light overlap play
+  m_TagString: PlayButton1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &2138440695
-RectTransform:
+--- !u!4 &2146237085
+Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2138440694}
+  m_GameObject: {fileID: 2146237084}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.998901, y: 120.986725, z: 0}
-  m_LocalScale: {x: 15, y: 0.02, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1978473215}
-  m_RootOrder: 9
+  m_Father: {fileID: 2062794184}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -92.5011, y: -55.513275}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2138440696
+--- !u!114 &2146237086
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2138440694}
+  m_GameObject: {fileID: 2146237084}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8453ebb491d6db44fa82fdae7e95dcd2, type: 3}
+  m_Script: {fileID: 11500000, guid: db2ed310167b89245b3fb7c1d23e8ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedScale: 1.3
---- !u!114 &2138440697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2138440694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.203}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &2138440698
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2138440694}
+  Title: 
+  Description: It's hard to see Play behind all these staff
+  unlockedTools: []
+  disabledTasks: []
+  enabledTasks: []
+  Tag: PlayButton1
+  LegalPercent: 50

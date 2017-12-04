@@ -16,7 +16,7 @@ public class CustomisableSprite : MonoBehaviour {
 
         if (Tag == "PlayButton1"
             || Tag == "PlayButton2" 
-            || Tag == "Close"
+            || Tag == "Close" || Tag == "Goals"
             || Tag == "Offer1"
             || Tag == "Offer2"
             || Tag == "Offer3")

@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114283811587223568}
   m_Layer: 5
   m_Name: StarsTool
-  m_TagString: Appealing
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

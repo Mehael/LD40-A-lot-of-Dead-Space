@@ -12,7 +12,8 @@ public class IsHeavyOverlapped : Task {
 
         foreach (var sprite2 in Board.sprites.Where(s => s.isHeavy))
             foreach (var sprite1 in tag1items)
-                if (Board.Intersection(sprite1, sprite2) > 0) return false;
+                if (sprite1 != sprite2
+                    && Board.Intersection(sprite1, sprite2) > 0) return false;
 
         return true;
     }
