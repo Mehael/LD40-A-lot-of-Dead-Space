@@ -7,4 +7,5 @@ public class TaskViewer : MonoBehaviour {
     public Text Label;
     public Text Description;
     public Button Done;
+    public Text DoneText;
 }

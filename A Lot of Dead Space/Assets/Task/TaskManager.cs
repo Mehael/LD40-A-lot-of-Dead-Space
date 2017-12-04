@@ -64,6 +64,7 @@ public class TaskManager : MonoBehaviour {
         CoursorHost.instance.SpawnCoursors(currentMainTask.InterestingSprite, 
             Coursor.Reaction.tap);
 
+        currentMainTask.OnCompleted();
         DisableTask(currentMainTask);
 
         var MainTaskBefore = currentMainTask;
@@ -82,8 +83,6 @@ public class TaskManager : MonoBehaviour {
     {
         if (task == null) return;
 
-        task.OnEnabled();
-
         if (task.Title != "")
         {
             currentMainTask = task;
@@ -92,6 +91,7 @@ public class TaskManager : MonoBehaviour {
             View.Description.text = task.Description;
             View.Done.interactable = false;
         }
+        task.OnEnabled();
 
         foreach (var item in task.unlockedTools)
             Toolbar.instance.AddTool(item);

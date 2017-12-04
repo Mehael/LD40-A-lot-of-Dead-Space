@@ -17,5 +17,6 @@ public class Task : MonoBehaviour {
         return true;
     }
     public virtual void OnEnabled() { }
+    public virtual void OnCompleted() { }
     public virtual void ShowErrorCoursor() { }
 }
