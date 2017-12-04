@@ -83,7 +83,11 @@ public class TaskManager : MonoBehaviour {
 
     void DisableTask(Task task)
     {
-        activeTasks.Remove(task);
+        if (activeTasks.Contains(task))
+            activeTasks.Remove(task);
+
+        foreach (var subtask in task.disabledTasks)
+            DisableTask(subtask);
 
         foreach (var item in task.unlockedTools)
             SafeDestroy(item); 

@@ -23,6 +23,8 @@ public class Toolbar : MonoBehaviour {
 
     public void RemoveTool(string toolTag)
     {
+        if (!activeTools.ContainsKey(toolTag)) return;
+
         Destroy(activeTools[toolTag].gameObject);
         activeTools.Remove(toolTag);
     }
