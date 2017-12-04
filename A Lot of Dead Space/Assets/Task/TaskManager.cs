@@ -48,6 +48,9 @@ public class TaskManager : MonoBehaviour {
 
         foreach (var item in currentMainTask.enabledTasks)
             ActivateTask(item);
+
+        if (currentMainTask.IsCompleted())
+            Done();
     }
 
     void ActivateTask(Task task)
