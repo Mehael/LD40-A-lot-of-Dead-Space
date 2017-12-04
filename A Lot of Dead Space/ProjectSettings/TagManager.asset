@@ -4,8 +4,24 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - PlayButton
   - Appealing
+  - Block
+  - Premium
+  - GiftBox
+  - VipGiftbox
+  - PlayButton2
+  - PlayButton1
+  - Close
+  - Offer1
+  - Offer2
+  - Offer3
+  - Char1
+  - Char2
+  - Char3
+  - Char3Boobs
+  - PlayButton
+  - FBLogin
+  - Goals
   layers:
   - Default
   - TransparentFX

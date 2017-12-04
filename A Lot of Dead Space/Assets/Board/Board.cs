@@ -6,6 +6,7 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class Board : MonoBehaviour {
     public static Board instance;
+    public RectTransform Background;
     public static List<CustomisableSprite> sprites =
         new List<CustomisableSprite>();
 
@@ -33,6 +34,16 @@ public class Board : MonoBehaviour {
 
     private void RedrawBoard()
     {
+        if (Background != null)
+        {
+            var padding = 10;
+            Background.sizeDelta = new Vector2(Width * CanvasScript.scaleFactor + padding*2,
+                Height * CanvasScript.scaleFactor + padding * 2);
+
+            Background.localPosition = new Vector3(-padding, -padding);
+        }
+
+        //kill lines
         var lines = new List<Transform>();
         for (int i = 0; i < transform.childCount; i++)
             lines.Add(transform.GetChild(i));
