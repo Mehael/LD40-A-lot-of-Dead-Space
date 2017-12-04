@@ -11,6 +11,8 @@ public class HasPerfectCover : Task
     public override bool IsCompleted()
     {
         var tag1items = Board.sprites.Where(s => s.Tag == Tag1);
+        if (tag1items.Count() > 0)
+            InterestingSprite = tag1items.First();
 
         bool hasMatch = false;
         foreach (var sprite2 in Board.sprites.Where(s => s.Tag == Tag2))

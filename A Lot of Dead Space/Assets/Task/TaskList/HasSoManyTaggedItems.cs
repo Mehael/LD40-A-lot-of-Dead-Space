@@ -11,9 +11,13 @@ public class HasSoManyTaggedItems : Task
 
     public override bool IsCompleted()
     {
+        var items = Board.sprites.Where(s => s.Tag == Tag);
+        if (items.Count()>0)
+            InterestingSprite = items.First();
+
         if (LessMode)
-            return Board.sprites.Count(s => s.Tag == Tag) > MaxAmount;
+            return items.Count() > MaxAmount;
         else
-            return Board.sprites.Count(s => s.Tag == Tag) <= MaxAmount;
+            return items.Count() <= MaxAmount;
     }
 }

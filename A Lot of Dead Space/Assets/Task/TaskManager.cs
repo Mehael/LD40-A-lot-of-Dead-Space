@@ -24,6 +24,15 @@ public class TaskManager : MonoBehaviour {
         ActivateTask(FirstTask);
     }
 
+    public void OnIdle()
+    {
+        var taskList = activeTasks.Where(t => t.InterestingSprite != null).ToList();
+        if (taskList.Count == 0) return;
+
+        CoursorHost.instance.SpawnCoursors(
+            taskList[Random.Range(0, taskList.Count)].InterestingSprite);
+    }
+
     public void UpdateTaskProgression()
     {
         if (currentMainTask == null) return;
@@ -47,6 +56,8 @@ public class TaskManager : MonoBehaviour {
 
     public void Done()
     {
+        CoursorHost.instance.SpawnCoursors(currentMainTask.InterestingSprite);
+
         DisableTask(currentMainTask);
 
         var MainTaskBefore = currentMainTask;

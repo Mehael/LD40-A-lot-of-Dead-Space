@@ -12,6 +12,9 @@ public class GiftCover : Task {
         var objItems = Board.sprites.Where(s => s.Tag == ObjTag);
         var giftItems = Board.sprites.Where(s => s.Tag == GiftTag);
 
+        if (objItems.Count() > 0)
+            InterestingSprite = objItems.First();
+
         var isMatched = false;
         foreach (var obj in objItems)
             foreach (var gift in giftItems)

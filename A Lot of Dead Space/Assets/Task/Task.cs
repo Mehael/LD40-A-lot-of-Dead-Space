@@ -9,6 +9,9 @@ public class Task : MonoBehaviour {
     public List<Task> disabledTasks;
     public List<Task> enabledTasks;
 
+    public CustomisableSprite InterestingSprite;
+    public Coursor.Reaction reaction = Coursor.Reaction.random;
+
     public virtual bool IsCompleted()
     {
         return true;

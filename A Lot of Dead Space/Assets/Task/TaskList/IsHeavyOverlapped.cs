@@ -9,6 +9,8 @@ public class IsHeavyOverlapped : Task {
     public override bool IsCompleted()
     {
         var tag1items = Board.sprites.Where(s => s.Tag == Tag);
+        if (tag1items.Count() > 0)
+            InterestingSprite = tag1items.First();
 
         foreach (var sprite2 in Board.sprites.Where(s => s.isHeavy))
             foreach (var sprite1 in tag1items)

@@ -9,7 +9,10 @@ public class HasTaggedItem : Task {
 
     public override bool IsCompleted()
     {
-        var amount = Board.sprites.Count(s => s.Tag == Tag);
+        var items = Board.sprites.Where(s => s.Tag == Tag);
+        var amount = items.Count();
+        if (amount > 0)
+            InterestingSprite = items.First();
 
         if (DontHasMode)
             return amount == 0;
