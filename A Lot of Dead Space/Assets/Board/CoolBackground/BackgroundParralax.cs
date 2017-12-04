@@ -8,11 +8,11 @@ public class BackgroundParralax : MonoBehaviour {
     Vector3 startPos;
     private void Awake()
     {
-        startPos = transform.position;
+        startPos = transform.localPosition;
     }
 
     void LateUpdate () {
-        transform.position = startPos +
+        transform.localPosition = startPos +
             (Input.mousePosition.x / Screen.width - 0.5f) * shift; 		
 	}
 }
