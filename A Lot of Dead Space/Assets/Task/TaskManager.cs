@@ -16,8 +16,11 @@ public class TaskManager : MonoBehaviour {
 	void Awake () {
         instance = this;
         for (var i = 0; i < TasksNode.childCount; i++)
-            tasks.Add(TasksNode.GetChild(i).GetComponent<Task>());
+            tasks.Add(TasksNode.GetChild(i).GetComponent<Task>());        
+    }
 
+    private void Start()
+    {
         ActivateTask(FirstTask);
     }
 
