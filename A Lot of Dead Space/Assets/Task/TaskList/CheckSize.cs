@@ -18,29 +18,31 @@ public class CheckSize : Task {
             return;
         }
 
+        float nowSize = GetCurrentSize();
+
+        reallyRequestedSize = nowSize + RequiredSize;
+    }
+
+    private float GetCurrentSize()
+    {
         var nowSprite = new List<CustomisableSprite>();
         if (Tag == "Offer")
             nowSprite = Board.sprites.Where(s => s.Tag.StartsWith(Tag)).ToList();
         else
             nowSprite = Board.sprites.Where(s => s.Tag == Tag).ToList();
 
+        if (nowSprite.Count() > 0)
+            InterestingSprite = nowSprite.First();
+
         var nowSize = 0f;
         foreach (var s in nowSprite)
             nowSize += s.size.x * s.size.y;
-
-        reallyRequestedSize = nowSize + RequiredSize;
+        return nowSize;
     }
 
     public override bool IsCompleted()
     {
-        var size = 0f;
-        
-        if (Tag == "Offer")
-            foreach (var sprite in Board.sprites.Where(s => s.Tag.StartsWith(Tag)))
-                size += sprite.size.x * sprite.size.y;
-        else
-            foreach (var sprite in Board.sprites.Where(s => s.Tag == Tag))
-                size += sprite.size.x * sprite.size.y;
+        var size = GetCurrentSize();
 
         if (LessMode)
             return size < reallyRequestedSize;

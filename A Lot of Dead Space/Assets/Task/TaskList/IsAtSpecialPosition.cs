@@ -11,7 +11,11 @@ public class IsAtSpecialPosition : Task {
 
     public override bool IsCompleted()
     {
-        foreach (var sprite in Board.sprites.Where(s => s.Tag == Tag))
+        var items = Board.sprites.Where(s => s.Tag == Tag);
+        if (items.Count() > 0)
+            InterestingSprite = items.First();
+
+        foreach (var sprite in items)
             if ((EnabledArea == Direction.bottom && sprite.leftbottom.y < AmountOfLegalLines)
                 || (EnabledArea == Direction.top && Board.instance.Height - sprite.righttop.y < AmountOfLegalLines)
                 || (EnabledArea == Direction.left && sprite.leftbottom.x < AmountOfLegalLines)

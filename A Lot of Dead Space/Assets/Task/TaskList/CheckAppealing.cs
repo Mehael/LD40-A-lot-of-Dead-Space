@@ -39,6 +39,9 @@ public class CheckAppealing : Task {
         if (taggedItems.Count == 0)
             isFailed = true;
 
+        if (taggedItems.Count() > 0)
+            InterestingSprite = taggedItems.First();
+
         foreach (var item in taggedItems)
             foreach (var sprite in Board.sprites.Where(s => s.Tag == "Appealing"))
                 appealingPoints += Board.Intersection(item, sprite);
