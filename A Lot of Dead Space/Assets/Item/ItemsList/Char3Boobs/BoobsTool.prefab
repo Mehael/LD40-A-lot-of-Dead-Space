@@ -121,7 +121,7 @@ MonoBehaviour:
   highlited: {r: 1, g: 0.9724138, b: 0, a: 1}
   spawnedItem: {fileID: 114689191184028904, guid: 7bc25b6cda1c5fa42ac3188ada6fcc12,
     type: 2}
-  spawnedSize: {x: 2, y: 1}
+  spawnedSize: {x: 4, y: 6}
   item: {fileID: 0}
   isDragged: 0
 --- !u!114 &114516639918389422
