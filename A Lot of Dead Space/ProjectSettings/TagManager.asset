@@ -63,3 +63,9 @@ TagManager:
   - name: Particles
     uniqueID: 623886823
     locked: 0
+  - name: Coursors
+    uniqueID: 3178092917
+    locked: 0
+  - name: Money
+    uniqueID: 1878713769
+    locked: 0

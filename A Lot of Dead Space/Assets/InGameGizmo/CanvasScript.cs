@@ -21,24 +21,25 @@ public class CanvasScript : MonoBehaviour {
     public float showingSpeed = 2f;
     public float mouseEpsilon = 1.5f;
 
-    float timer = 0;
+    float timerBeforeIdle = 0;
     Vector3 lastMousePosition = Vector3.zero;
     bool isHidden = false;
 
+    float timerInIdle = 0;
     private void Update()
     {
         var newMousePosition = Input.mousePosition;
         if ((lastMousePosition - newMousePosition).magnitude > mouseEpsilon ||
             Input.GetMouseButtonDown(0))
         {
-            timer = 0;
+            timerBeforeIdle = 0;
             isHidden = false;
             foreach (var gizmo in inGameGizmos)
                 gizmo.Show(showingSpeed);
         }
         else if (!isHidden)
         {
-            if (timer >= timeBeforeHidingGUI)
+            if (timerBeforeIdle >= timeBeforeHidingGUI)
             {
                 TaskManager.instance.OnIdle();
 
@@ -47,7 +48,16 @@ public class CanvasScript : MonoBehaviour {
                     gizmo.Hide(hidingSpeed);
             }
             else if (!Input.GetMouseButton(0))
-                timer += Time.deltaTime;
+                timerBeforeIdle += Time.deltaTime;
+        }
+        else
+        {
+            timerInIdle += Time.deltaTime;
+            if (timerInIdle > 12f)
+            {
+                TaskManager.instance.OnIdle();
+                timerInIdle = 0f;
+            }
         }
 
         lastMousePosition = newMousePosition;

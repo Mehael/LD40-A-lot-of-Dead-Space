@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Coursor : MonoBehaviour {
     public float moveSpeed = 1f;
-    public enum Reaction {tap, angry, confused, happy, random}
+    public enum Reaction {tap, angry, happy, random}
 
     Animator anim;
     private void Awake()
@@ -19,11 +19,13 @@ public class Coursor : MonoBehaviour {
             Random.Range(-1, Board.instance.Height + 1));
     }
 
+    float padding = 0.3f;
     public void MoveDoDie(CustomisableSprite targetRect, Reaction reaction)
     {
-        var target = new Vector2(Random.Range(targetRect.leftbottom.x, targetRect.righttop.x),
-            Random.Range(targetRect.leftbottom.y, targetRect.righttop.y));
+        var target = new Vector2(Random.Range(targetRect.leftbottom.x + padding, targetRect.righttop.x - padding),
+            Random.Range(targetRect.leftbottom.y + padding, targetRect.righttop.y - padding));
 
+        target += new Vector2(0,-0.5f);
         StartCoroutine(MoveAnimate(target, reaction));
     }
 
@@ -41,10 +43,9 @@ public class Coursor : MonoBehaviour {
         }
 
         if (reaction == Reaction.random)
-            reaction = (Reaction)Random.Range(0, 3);
+            reaction = (Reaction)Random.Range(0, 2);
 
         if (reaction == Reaction.angry) anim.SetTrigger("Sad");
-        else if (reaction == Reaction.confused) anim.SetTrigger("Confused");
         else if (reaction == Reaction.happy) anim.SetTrigger("Happy");
         else if (reaction == Reaction.tap) anim.SetTrigger("Tapping");
     }

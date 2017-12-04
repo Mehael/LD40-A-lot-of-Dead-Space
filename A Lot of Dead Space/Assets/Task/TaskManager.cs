@@ -29,8 +29,13 @@ public class TaskManager : MonoBehaviour {
         var taskList = activeTasks.Where(t => t.InterestingSprite != null).ToList();
         if (taskList.Count == 0) return;
 
-        CoursorHost.instance.SpawnCoursors(
-            taskList[Random.Range(0, taskList.Count)].InterestingSprite);
+        var rTask = taskList[Random.Range(0, taskList.Count)];
+        var reaction = Coursor.Reaction.angry;
+        if (rTask.IsCompleted())
+            reaction = (Random.value > 0.5f) ? Coursor.Reaction.happy : Coursor.Reaction.tap;
+
+        CoursorHost.instance.SpawnCoursors(rTask
+            .InterestingSprite, reaction);
     }
 
     public void UpdateTaskProgression()
@@ -56,7 +61,8 @@ public class TaskManager : MonoBehaviour {
 
     public void Done()
     {
-        CoursorHost.instance.SpawnCoursors(currentMainTask.InterestingSprite);
+        CoursorHost.instance.SpawnCoursors(currentMainTask.InterestingSprite, 
+            Coursor.Reaction.tap);
 
         DisableTask(currentMainTask);
 
