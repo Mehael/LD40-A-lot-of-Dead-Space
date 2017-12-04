@@ -21,13 +21,21 @@ public class CheckAppealing : Task {
         UpdateAppealing();
 
         reallyRequestedAppeal = appealingPoints + RequiredAppealingPoints;
+        if (reallyRequestedAppeal < 0)
+            reallyRequestedAppeal = 0;
     }
 
     bool isFailed = false;
     public void UpdateAppealing()
     {
+        isFailed = false;
         appealingPoints = 0;
-        var taggedItems = Board.sprites.Where(s => s.Tag == Tag).ToList();
+        List<CustomisableSprite> taggedItems;
+        if (Tag == "Offer")
+           taggedItems = Board.sprites.Where(s => s.Tag.StartsWith(Tag)).ToList();
+        else
+            taggedItems = Board.sprites.Where(s => s.Tag == Tag).ToList();
+
         if (taggedItems.Count == 0)
             isFailed = true;
 
@@ -41,10 +49,10 @@ public class CheckAppealing : Task {
     {
         UpdateAppealing();
         if (isFailed)
-            return true;
+            return false;
 
         if (LessMode)
-            return appealingPoints < reallyRequestedAppeal;
+            return appealingPoints <= reallyRequestedAppeal;
         else
             return appealingPoints >= reallyRequestedAppeal;
     }

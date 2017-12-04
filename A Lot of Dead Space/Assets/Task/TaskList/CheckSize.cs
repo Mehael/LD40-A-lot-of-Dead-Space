@@ -34,8 +34,13 @@ public class CheckSize : Task {
     public override bool IsCompleted()
     {
         var size = 0f;
-        foreach (var sprite in Board.sprites.Where(s => s.Tag == Tag))
-            size += sprite.size.x * sprite.size.y;
+        
+        if (Tag == "Offer")
+            foreach (var sprite in Board.sprites.Where(s => s.Tag.StartsWith(Tag)))
+                size += sprite.size.x * sprite.size.y;
+        else
+            foreach (var sprite in Board.sprites.Where(s => s.Tag == Tag))
+                size += sprite.size.x * sprite.size.y;
 
         if (LessMode)
             return size < reallyRequestedSize;
