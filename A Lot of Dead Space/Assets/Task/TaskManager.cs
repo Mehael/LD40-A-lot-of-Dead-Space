@@ -56,7 +56,8 @@ public class TaskManager : MonoBehaviour {
         if (MainTaskBefore == currentMainTask)
             return;
 
-        if (currentMainTask.IsCompleted())
+        if (currentMainTask.IsCompleted() 
+            && currentMainTask.tag != "GameController")
             Done();
     }
 
