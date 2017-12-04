@@ -32,11 +32,11 @@ public class Board : MonoBehaviour {
             RedrawBoard();
 	}
 
+    public static int padding = 10;
     private void RedrawBoard()
     {
         if (Background != null)
         {
-            var padding = 10;
             Background.sizeDelta = new Vector2(Width * CanvasScript.scaleFactor + padding*2,
                 Height * CanvasScript.scaleFactor + padding * 2);
 
@@ -45,8 +45,8 @@ public class Board : MonoBehaviour {
 
         //kill lines
         var lines = new List<Transform>();
-        for (int i = 0; i < transform.childCount; i++)
-            lines.Add(transform.GetChild(i));
+        for (int i = 0; i < Background.childCount; i++)
+            lines.Add(Background.GetChild(i));
 
         foreach (var line in lines)
             DestroyImmediate(line.gameObject);
@@ -54,25 +54,13 @@ public class Board : MonoBehaviour {
         //Draw new
         var angle = Quaternion.Euler(0, 0, 90);
         for (int x = 0; x <= Width; x++)
-            Instantiate(LinePrefub, new Vector3(x, 0, 0) + transform.position, angle, transform);
+            Instantiate(LinePrefub, new Vector3(x, 0, 0) + transform.position, angle, Background);
 
         for (int y = 0; y <= Height; y++)
-            Instantiate(LinePrefub, new Vector3(0, y, 0) + transform.position, Quaternion.identity, transform);
+            Instantiate(LinePrefub, new Vector3(0, y, 0) + transform.position, Quaternion.identity, Background);
 
         _width = Width;
         _height = Height;
-    }
-
-    internal Vector2 GetClosestSnap(Vector3 vector3)
-    {
-        var localCoords = vector3 - transform.localPosition;
-
-        var snappedCoords = new Vector3(
-            Mathf.RoundToInt(localCoords.x) + transform.localPosition.x,
-            Mathf.RoundToInt(localCoords.y) + transform.localPosition.y,
-            0);
-
-        return snappedCoords;
     }
 
     internal Vector2 GetCoords(Vector3 position)

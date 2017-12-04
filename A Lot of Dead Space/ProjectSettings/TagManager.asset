@@ -7,7 +7,6 @@ TagManager:
   - Appealing
   - Block
   - Premium
-  - GiftBox
   - VipGiftbox
   - PlayButton2
   - PlayButton1
@@ -22,6 +21,8 @@ TagManager:
   - PlayButton
   - FBLogin
   - Goals
+  - Board
+  - Gift
   layers:
   - Default
   - TransparentFX

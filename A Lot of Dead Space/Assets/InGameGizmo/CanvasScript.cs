@@ -5,6 +5,13 @@ using UnityEngine.UI;
 
 public class CanvasScript : MonoBehaviour {
     public static float scaleFactor = 37f;
+    public static RectTransform ItemsNode;
+    public RectTransform itemsNode;
+
+    private void Awake()
+    {
+        ItemsNode = itemsNode;
+    }
 
     public static List<InGameGizmo> inGameGizmos =
         new List<InGameGizmo>();

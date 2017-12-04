@@ -17,10 +17,16 @@ public class CheckSize : Task {
             reallyRequestedSize = RequiredSize;
             return;
         }
-        var nowSprite = Board.sprites.Where(s => s.Tag == Tag).First();
+
+        var nowSprite = new List<CustomisableSprite>();
+        if (Tag == "Offer")
+            nowSprite = Board.sprites.Where(s => s.Tag.StartsWith(Tag)).ToList();
+        else
+            nowSprite = Board.sprites.Where(s => s.Tag == Tag).ToList();
+
         var nowSize = 0f;
-        if (nowSprite != null)
-            nowSize = nowSprite.size.x * nowSprite.size.y;
+        foreach (var s in nowSprite)
+            nowSize += s.size.x * s.size.y;
 
         reallyRequestedSize = nowSize + RequiredSize;
     }

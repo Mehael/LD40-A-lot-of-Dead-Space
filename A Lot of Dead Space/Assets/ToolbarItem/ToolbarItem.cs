@@ -10,7 +10,7 @@ public class ToolbarItem : MonoBehaviour {
     public CustomisableSprite spawnedItem;
     public Vector2 spawnedSize = Vector2.one;
 
-    CustomisableSprite item;
+    public CustomisableSprite item;
     private void Awake()
     {
         image = GetComponent<Image>();
@@ -40,10 +40,10 @@ public class ToolbarItem : MonoBehaviour {
             item.movingAnchor.OnDrag(null);
     }
 
-    bool isDragged = false;
-    public void OnPointerDown()
+    public bool isDragged = false;
+    public virtual void OnPointerDown()
     {
-        item = Instantiate(spawnedItem, transform.position, Quaternion.identity, image.canvas.transform);
+        item = Instantiate(spawnedItem, transform.position, Quaternion.identity, CanvasScript.ItemsNode.transform);
         item.movingAnchor.OnPointerDown(null);
         item.movingAnchor.SetSize(spawnedSize);
         isDragged = true;
