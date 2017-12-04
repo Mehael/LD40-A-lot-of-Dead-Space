@@ -269,6 +269,7 @@ MonoBehaviour:
   disabledTasks: []
   enabledTasks:
   - {fileID: 1115856953}
+  - {fileID: 2083588218}
   Tag: Close
   DontHasMode: 0
 --- !u!4 &80549376
@@ -5856,6 +5857,7 @@ MonoBehaviour:
   disabledTasks: []
   enabledTasks:
   - {fileID: 1772512226}
+  - {fileID: 1966761604}
   Tag: PlayButton1
   RequiredAppealingPoints: 0
   FlexibleRequirement: 0
