@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114526163034933440}
   - component: {fileID: 114283811587223568}
   m_Layer: 5
-  m_Name: AppealingTool
+  m_Name: StarsTool
   m_TagString: Appealing
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,6 +46,8 @@ MonoBehaviour:
   spawnedItem: {fileID: 114912239329218738, guid: e2c832ad2dc9adc41a0bd41dd678cac5,
     type: 2}
   spawnedSize: {x: 1, y: 1}
+  item: {fileID: 114912239329218738, guid: e2c832ad2dc9adc41a0bd41dd678cac5, type: 2}
+  isDragged: 0
 --- !u!114 &114283811587223568
 MonoBehaviour:
   m_ObjectHideFlags: 1

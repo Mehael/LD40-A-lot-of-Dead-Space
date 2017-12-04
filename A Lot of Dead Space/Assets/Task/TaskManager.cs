@@ -46,8 +46,12 @@ public class TaskManager : MonoBehaviour {
     {
         DisableTask(currentMainTask);
 
+        var MainTaskBefore = currentMainTask;
         foreach (var item in currentMainTask.enabledTasks)
             ActivateTask(item);
+
+        if (MainTaskBefore == currentMainTask)
+            return;
 
         if (currentMainTask.IsCompleted())
             Done();
