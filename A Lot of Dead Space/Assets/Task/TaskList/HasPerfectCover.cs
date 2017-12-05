@@ -14,11 +14,9 @@ public class HasPerfectCover : Task
         if (tag1items.Count() > 0)
             InterestingSprite = tag1items.First();
 
-        var tag2items = tag1items;
-        if (Tag2 == "")
-            tag2items = Board.sprites.Where(t => t.Tag!=Tag1);
-        else
-            tag2items = Board.sprites.Where(t => t.Tag != Tag2);
+        var tag2items = Board.sprites.Where(t => t.Tag != Tag1);
+        if (Tag2 != "")
+            tag2items = tag2items.Where(t => t.Tag == Tag2);
 
         int hasMatch = 0;
         foreach (var sprite2 in tag2items)
@@ -26,6 +24,7 @@ public class HasPerfectCover : Task
                 if (sprite1.leftbottom.Equals(sprite2.leftbottom)
                     && sprite1.size.Equals(sprite2.size)) hasMatch++;
 
-        return hasMatch == tag1items.Count();
+        return hasMatch == tag1items.Count() 
+            && hasMatch > 0;
     }
 }
