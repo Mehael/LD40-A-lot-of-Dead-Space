@@ -51,7 +51,7 @@ public class CanvasScript : MonoBehaviour {
         else
         {
             timerInIdle += Time.deltaTime;
-            if (timerInIdle > 12f)
+            if (timerInIdle > 4f)
             {
                 TaskManager.instance.OnIdle();
                 timerInIdle = 0f;
