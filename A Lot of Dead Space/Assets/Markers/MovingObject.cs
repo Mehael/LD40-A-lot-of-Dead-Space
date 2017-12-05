@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,8 +27,7 @@ public class MovingObject : Marker {
         }
         else
         {
-            base.OnEndDrag(data);
-
+		 base.OnEndDrag(data);
             SetPivot(new Vector2(0, 0));
 
             if (leftbottom.x < 0) leftbottom.x = 0;
@@ -40,6 +39,8 @@ public class MovingObject : Marker {
                 leftbottom.y = Board.instance.Height - size.y;
 
             transform.parent.position = leftbottom;
+
+		 RecalculateGridRect();
         }
     }
 }
