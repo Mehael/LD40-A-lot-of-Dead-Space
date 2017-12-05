@@ -100,7 +100,7 @@ public class TaskManager : MonoBehaviour {
 
     private void CheckTaskInjection()
     {
-        if (tasksDone <= 4 || ALotOfDeadSpace.IsCompleted()) return;
+        if (tasksDone <= 7 || ALotOfDeadSpace.IsCompleted()) return;
 
         ALotOfDeadSpace.enabledTasks = currentMainTask.enabledTasks;
         currentMainTask.enabledTasks = new List<Task>() { ALotOfDeadSpace };
