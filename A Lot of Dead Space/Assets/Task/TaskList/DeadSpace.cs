@@ -21,10 +21,19 @@ public class DeadSpace : Task
         grid = new bool[Board.instance.Width, Board.instance.Height];
 
         foreach (var s in Board.sprites)
+        {
+            int ix = (int)s.leftbottom.x;
+            int iy = (int)s.leftbottom.y;
+
             for (var x = 0; x < s.size.x; x++)
                 for (var y = 0; y < s.size.y; y++)
-                    grid[(int)s.leftbottom.x + x, (int)s.leftbottom.y + y] = true;
-
+                {
+                    if (ix + x > Board.instance.Width || iy  + y> Board.instance.Height)
+                        IsCompleted();
+                    else
+                        grid[ix + x, iy + y] = true;
+                }
+        }
         var freeCells = 0;
         for (var x = 0; x < Board.instance.Width; x++)
             for (var y = 0; y < Board.instance.Height; y++)

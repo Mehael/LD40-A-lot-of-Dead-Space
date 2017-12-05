@@ -14,7 +14,7 @@ public class Symmetry : Task {
             InterestingSprite = tag1items.First();
 
         foreach (var t in tag1items)
-            if (t.size.x / t.size.y != aspectRatio)
+            if (t.size.y / t.size.x != aspectRatio)
                 return false;
 
         return true;
