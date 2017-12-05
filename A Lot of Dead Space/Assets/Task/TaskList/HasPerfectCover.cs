@@ -24,7 +24,7 @@ public class HasPerfectCover : Task
                 if (sprite1.leftbottom.Equals(sprite2.leftbottom)
                     && sprite1.size.Equals(sprite2.size)) hasMatch++;
 
-        return hasMatch == tag1items.Count() 
+        return hasMatch >= tag1items.Count() 
             && hasMatch > 0;
     }
 }
