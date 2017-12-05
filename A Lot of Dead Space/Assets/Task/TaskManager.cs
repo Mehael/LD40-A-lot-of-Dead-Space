@@ -48,6 +48,8 @@ public class TaskManager : MonoBehaviour {
     public Animator MainScene;
     public void UpdateTaskProgression()
     {
+        Music.instance.PlacePlay();
+
         if (currentMainTask == null) return;
 
         var sideTasks = "";
@@ -68,13 +70,18 @@ public class TaskManager : MonoBehaviour {
 
         lastTask = View.Description.text;
 
+        var lastInt = View.Done.interactable;
         View.Done.interactable = currentMainTask.IsCompleted() 
             && sideTasks == "";
+
+        if (lastInt != View.Done.interactable && View.Done.interactable)
+            Music.instance.CompletedPlay();
     }
 
     public int tasksDone = 0;
     public void Done()
     {
+        Music.instance.WinPlay();
         tasksDone++;
        // MainScene.SetTrigger("NewTask");
 
@@ -102,6 +109,7 @@ public class TaskManager : MonoBehaviour {
     {
         if (tasksDone <= 7 || ALotOfDeadSpace.IsCompleted()) return;
 
+        Music.instance.ALODSPlay();
         ALotOfDeadSpace.enabledTasks = currentMainTask.enabledTasks;
         currentMainTask.enabledTasks = new List<Task>() { ALotOfDeadSpace };
     }

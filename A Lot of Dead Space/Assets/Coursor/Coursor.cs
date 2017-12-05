@@ -29,6 +29,11 @@ public class Coursor : MonoBehaviour {
         StartCoroutine(MoveAnimate(target, reaction));
     }
 
+    public void Coins(string param)
+    {
+        Music.instance.MoneyPlay();
+    }
+
     IEnumerator MoveAnimate(Vector2 target, Reaction reaction)
     {
         yield return new WaitForSeconds(2 * Random.value);
