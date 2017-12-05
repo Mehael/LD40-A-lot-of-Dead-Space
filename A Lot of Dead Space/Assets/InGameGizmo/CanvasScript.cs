@@ -41,8 +41,6 @@ public class CanvasScript : MonoBehaviour {
         {
             if (timerBeforeIdle >= timeBeforeHidingGUI)
             {
-                TaskManager.instance.OnIdle();
-
                 isHidden = true;
                 foreach (var gizmo in inGameGizmos)
                     gizmo.Hide(hidingSpeed);

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -9,6 +10,7 @@ public class TaskManager : MonoBehaviour {
     public Transform TasksNode;
     public TaskViewer View;
     public Task FirstTask;
+    public Task ALotOfDeadSpace;
 
     List<Task> tasks = new List<Task>();
     List<Task> activeTasks = new List<Task>();
@@ -29,15 +31,21 @@ public class TaskManager : MonoBehaviour {
         var taskList = activeTasks.Where(t => t.InterestingSprite != null).ToList();
         if (taskList.Count == 0) return;
 
-        var rTask = taskList[Random.Range(0, taskList.Count)];
+        var rTask = taskList[UnityEngine.Random.Range(0, taskList.Count)];
+        var missed = taskList.Where(t => !t.IsCompleted()).ToList();
+        if (missed.Count() > 0)
+            rTask = missed[UnityEngine.Random.Range(0, missed.Count())];
+
         var reaction = Coursor.Reaction.angry;
         if (rTask.IsCompleted())
-            reaction = (Random.value > 0.5f) ? Coursor.Reaction.happy : Coursor.Reaction.tap;
+            reaction = (UnityEngine.Random.value > 0.5f) ? Coursor.Reaction.happy : Coursor.Reaction.tap;
 
         CoursorHost.instance.SpawnCoursors(rTask
             .InterestingSprite, reaction);
     }
 
+    string lastTask = "";
+    public Animator MainScene;
     public void UpdateTaskProgression()
     {
         if (currentMainTask == null) return;
@@ -55,17 +63,28 @@ public class TaskManager : MonoBehaviour {
         else
             View.Description.text = currentMainTask.Description;
 
+        //if (lastTask != View.Description.text)
+        //    MainScene.SetTrigger("NewTask");
+
+        lastTask = View.Description.text;
+
         View.Done.interactable = currentMainTask.IsCompleted() 
             && sideTasks == "";
     }
 
+    public int tasksDone = 0;
     public void Done()
     {
+        tasksDone++;
+       // MainScene.SetTrigger("NewTask");
+
         CoursorHost.instance.SpawnCoursors(currentMainTask.InterestingSprite, 
             Coursor.Reaction.tap);
 
         currentMainTask.OnCompleted();
         DisableTask(currentMainTask);
+
+        CheckTaskInjection();
 
         var MainTaskBefore = currentMainTask;
         foreach (var item in currentMainTask.enabledTasks)
@@ -77,6 +96,14 @@ public class TaskManager : MonoBehaviour {
         if (currentMainTask.IsCompleted() 
             && currentMainTask.tag != "GameController")
             Done();
+    }
+
+    private void CheckTaskInjection()
+    {
+        if (tasksDone <= 4 || ALotOfDeadSpace.IsCompleted()) return;
+
+        ALotOfDeadSpace.enabledTasks = currentMainTask.enabledTasks;
+        currentMainTask.enabledTasks = new List<Task>() { ALotOfDeadSpace };
     }
 
     void ActivateTask(Task task)

@@ -6,19 +6,24 @@ public class DeadSpace : Task
 {
     public int LegalAmountOfEmptyCells = 2;
     public bool FewMode = false;
+    public Animator mainScene;
+    public string Trigger;
 
     bool[,] grid;
+
     public override void OnEnabled()
     {
-        grid = new bool[Board.instance.Width, Board.instance.Height];
+        mainScene.SetTrigger("DeadSpace");
     }
 
     public override bool IsCompleted()
     {
+        grid = new bool[Board.instance.Width, Board.instance.Height];
+
         foreach (var s in Board.sprites)
             for (var x = 0; x < s.size.x; x++)
                 for (var y = 0; y < s.size.y; y++)
-                    grid[x, y] = true;
+                    grid[(int)s.leftbottom.x + x, (int)s.leftbottom.y + y] = true;
 
         var freeCells = 0;
         for (var x = 0; x < Board.instance.Width; x++)

@@ -16,7 +16,7 @@ public class BoardSizeChange : Task {
         StartCoroutine(MoveCamera(CameraShift, 2f));
 
         foreach (var s in Board.sprites)
-            if (s.righttop.x >= NewWidth || s.righttop.y >= NewHeight)
+            if (s.righttop.x > NewWidth || s.righttop.y > NewHeight)
                 Destroy(s.gameObject);
 
         base.OnEnabled();
