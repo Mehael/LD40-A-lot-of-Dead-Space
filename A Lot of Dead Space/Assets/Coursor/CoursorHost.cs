@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,7 +22,7 @@ public class CoursorHost : MonoBehaviour {
     private IEnumerator Creator(CustomisableSprite sprite, Coursor.Reaction reaction)
     {
         var i = 0;
-        var m = Random.Range(1, 2);
+        var m = Random.Range(1,  TaskManager.instance.tasksDone / 8f);
         while (i < m)
         {
             i++;
